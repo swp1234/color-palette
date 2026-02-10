@@ -13,22 +13,22 @@ class ColorPaletteGenerator {
     }
 
     async init() {
-        // Load translations
-        await i18n.loadTranslations(i18n.currentLang);
-        i18n.updateUI();
+        try {
+            await i18n.loadTranslations(i18n.currentLang);
+            i18n.updateUI();
+        } catch (e) {
+            console.warn('i18n init failed:', e);
+        }
 
-        // Load saved state
         this.loadState();
-
-        // Generate initial palette
         this.generatePalette();
-
-        // Setup event listeners
         this.setupEventListeners();
 
-        // Hide loader
         const loader = document.getElementById('app-loader');
-        loader.classList.add('hidden');
+        if (loader) {
+            loader.classList.add('hidden');
+            setTimeout(() => loader.remove(), 300);
+        }
     }
 
     setupEventListeners() {
