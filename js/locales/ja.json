@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "カラーパレットジェネレーター - 調和のとれた色の自動生成",
+    "description": "調和のとれた色のパレットを自動的に生成します。補色、類似色、三角配色などの複数の色モードをサポート",
+    "loading": "読み込み中..."
+  },
+  "header": {
+    "title": "カラーパレットジェネレーター",
+    "subtitle": "調和のとれた色を生成"
+  },
+  "buttons": {
+    "generate": "新しいパレットを生成",
+    "copy": "コピー",
+    "exportCSS": "CSS変数",
+    "exportTailwind": "Tailwind設定",
+    "exportJSON": "JSON",
+    "clearHistory": "履歴をクリア"
+  },
+  "labels": {
+    "mode": "色モード",
+    "codeFormat": "色コード",
+    "paletteInfo": "パレット情報",
+    "export": "エクスポート",
+    "history": "最近のパレット"
+  },
+  "modes": {
+    "complementary": "補色",
+    "analogous": "類似色",
+    "triadic": "三角配色",
+    "tetradic": "四角配色",
+    "monochromatic": "単色変形"
+  },
+  "info": {
+    "contrast": "コントラスト分析",
+    "temperature": "色温度",
+    "veryDark": "非常に暗い",
+    "dark": "暗い",
+    "balanced": "バランスの取れた",
+    "light": "明るい",
+    "warm": "温かい",
+    "cool": "冷たい"
+  },
+  "hints": {
+    "spacebar": "またはスペースキーを押す"
+  },
+  "messages": {
+    "copied": "コピーしました！",
+    "historyEmpty": "生成されたパレットはありません",
+    "confirmClear": "履歴をクリアしてもよろしいですか？"
+  },
+  "recommendations": {
+    "title": "こちらもお試しください"
+  }
+}

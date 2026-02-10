@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Color Palette Generator - Harmonious Colors Auto Generation",
+    "description": "Automatically generate harmonious color palettes. Supports multiple color modes including complementary, analogous, and triadic",
+    "loading": "Loading..."
+  },
+  "header": {
+    "title": "Color Palette Generator",
+    "subtitle": "Generate Harmonious Colors"
+  },
+  "buttons": {
+    "generate": "Generate New Palette",
+    "copy": "Copy",
+    "exportCSS": "CSS Variables",
+    "exportTailwind": "Tailwind Config",
+    "exportJSON": "JSON",
+    "clearHistory": "Clear History"
+  },
+  "labels": {
+    "mode": "Color Mode",
+    "codeFormat": "Color Code",
+    "paletteInfo": "Palette Info",
+    "export": "Export",
+    "history": "Recent Palettes"
+  },
+  "modes": {
+    "complementary": "Complementary",
+    "analogous": "Analogous",
+    "triadic": "Triadic",
+    "tetradic": "Tetradic",
+    "monochromatic": "Monochromatic"
+  },
+  "info": {
+    "contrast": "Contrast Analysis",
+    "temperature": "Color Temperature",
+    "veryDark": "Very Dark",
+    "dark": "Dark",
+    "balanced": "Balanced",
+    "light": "Light",
+    "warm": "Warm",
+    "cool": "Cool"
+  },
+  "hints": {
+    "spacebar": "Or press Spacebar"
+  },
+  "messages": {
+    "copied": "Copied!",
+    "historyEmpty": "No generated palettes",
+    "confirmClear": "Are you sure you want to clear history?"
+  },
+  "recommendations": {
+    "title": "You might also like"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Générateur de palette de couleurs - Génération automatique de couleurs harmonieuses",
+    "description": "Générez automatiquement des palettes de couleurs harmonieuses. Supporte plusieurs modes de couleurs incluant complémentaire, analogue et triadique",
+    "loading": "Chargement..."
+  },
+  "header": {
+    "title": "Générateur de palette de couleurs",
+    "subtitle": "Générez des couleurs harmonieuses"
+  },
+  "buttons": {
+    "generate": "Générer une nouvelle palette",
+    "copy": "Copier",
+    "exportCSS": "Variables CSS",
+    "exportTailwind": "Configuration Tailwind",
+    "exportJSON": "JSON",
+    "clearHistory": "Effacer l'historique"
+  },
+  "labels": {
+    "mode": "Mode couleur",
+    "codeFormat": "Code couleur",
+    "paletteInfo": "Informations sur la palette",
+    "export": "Exporter",
+    "history": "Palettes récentes"
+  },
+  "modes": {
+    "complementary": "Complémentaire",
+    "analogous": "Analogue",
+    "triadic": "Triadique",
+    "tetradic": "Tétradique",
+    "monochromatic": "Monochromatique"
+  },
+  "info": {
+    "contrast": "Analyse de contraste",
+    "temperature": "Température de couleur",
+    "veryDark": "Très foncé",
+    "dark": "Foncé",
+    "balanced": "Équilibré",
+    "light": "Clair",
+    "warm": "Chaud",
+    "cool": "Froid"
+  },
+  "hints": {
+    "spacebar": "Ou appuyez sur la barre d'espace"
+  },
+  "messages": {
+    "copied": "Copié!",
+    "historyEmpty": "Aucune palette générée",
+    "confirmClear": "Êtes-vous sûr de vouloir effacer l'historique?"
+  },
+  "recommendations": {
+    "title": "Cela pourrait aussi vous plaire"
+  }
+}

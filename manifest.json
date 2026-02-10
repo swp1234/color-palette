@@ -1,0 +1,58 @@
+{
+  "name": "색상 팔레트 생성기",
+  "short_name": "색상 팔레트",
+  "description": "조화로운 색상 팔레트를 자동으로 생성합니다. 보색, 유사색, 삼각배색 등 다양한 색상 모드 지원",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#667eea",
+  "background_color": "#0f0f23",
+  "lang": "ko",
+  "dir": "ltr",
+  "categories": [
+    "productivity",
+    "graphics"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "팔레트 생성",
+      "short_name": "생성",
+      "description": "새로운 색상 팔레트 생성",
+      "url": "index.html",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192'/><text x='96' y='96' font-size='80' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>🎨</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "팔레트 히스토리",
+      "short_name": "히스토리",
+      "description": "생성된 팔레트 히스토리 확인",
+      "url": "index.html#history",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192'/><text x='96' y='96' font-size='80' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>⏱️</text></svg>",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

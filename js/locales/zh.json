@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "色彩调色板生成器 - 和谐色彩自动生成",
+    "description": "自动生成和谐的色彩调色板。支持多种色彩模式，包括互补色、类似色和三角配色",
+    "loading": "加载中..."
+  },
+  "header": {
+    "title": "色彩调色板生成器",
+    "subtitle": "生成和谐的色彩"
+  },
+  "buttons": {
+    "generate": "生成新调色板",
+    "copy": "复制",
+    "exportCSS": "CSS变量",
+    "exportTailwind": "Tailwind配置",
+    "exportJSON": "JSON",
+    "clearHistory": "清除历史记录"
+  },
+  "labels": {
+    "mode": "色彩模式",
+    "codeFormat": "色彩代码",
+    "paletteInfo": "调色板信息",
+    "export": "导出",
+    "history": "最近的调色板"
+  },
+  "modes": {
+    "complementary": "互补色",
+    "analogous": "类似色",
+    "triadic": "三角配色",
+    "tetradic": "四角配色",
+    "monochromatic": "单色变化"
+  },
+  "info": {
+    "contrast": "对比度分析",
+    "temperature": "色温",
+    "veryDark": "很深",
+    "dark": "深色",
+    "balanced": "平衡",
+    "light": "浅色",
+    "warm": "温暖",
+    "cool": "冷色"
+  },
+  "hints": {
+    "spacebar": "或按空格键"
+  },
+  "messages": {
+    "copied": "已复制！",
+    "historyEmpty": "没有生成的调色板",
+    "confirmClear": "确定要清除历史记录吗？"
+  },
+  "recommendations": {
+    "title": "你也可能喜欢"
+  }
+}

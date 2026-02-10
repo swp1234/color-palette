@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Farbpaletten-Generator - Automatische Generierung harmonischer Farben",
+    "description": "Generieren Sie automatisch harmonische Farbpaletten. Unterstützt mehrere Farbmodi einschließlich komplementär, analog und triadisch",
+    "loading": "Wird geladen..."
+  },
+  "header": {
+    "title": "Farbpaletten-Generator",
+    "subtitle": "Harmonische Farben generieren"
+  },
+  "buttons": {
+    "generate": "Neue Palette generieren",
+    "copy": "Kopieren",
+    "exportCSS": "CSS-Variablen",
+    "exportTailwind": "Tailwind-Konfiguration",
+    "exportJSON": "JSON",
+    "clearHistory": "Verlauf löschen"
+  },
+  "labels": {
+    "mode": "Farbmodus",
+    "codeFormat": "Farbcode",
+    "paletteInfo": "Paletteninformation",
+    "export": "Exportieren",
+    "history": "Letzte Paletten"
+  },
+  "modes": {
+    "complementary": "Komplementär",
+    "analogous": "Analog",
+    "triadic": "Triadisch",
+    "tetradic": "Tetradisch",
+    "monochromatic": "Monochromatisch"
+  },
+  "info": {
+    "contrast": "Kontrastanalyse",
+    "temperature": "Farbtemperatur",
+    "veryDark": "Sehr dunkel",
+    "dark": "Dunkel",
+    "balanced": "Ausgewogen",
+    "light": "Hell",
+    "warm": "Warm",
+    "cool": "Kühl"
+  },
+  "hints": {
+    "spacebar": "Oder Leertaste drücken"
+  },
+  "messages": {
+    "copied": "Kopiert!",
+    "historyEmpty": "Keine generierten Paletten",
+    "confirmClear": "Sind Sie sicher, dass Sie den Verlauf löschen möchten?"
+  },
+  "recommendations": {
+    "title": "Das könnte Ihnen auch gefallen"
+  }
+}

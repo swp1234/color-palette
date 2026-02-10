@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Renk Paleti Oluşturucu - Uyumlu Renklerin Otomatik Oluşturulması",
+    "description": "Uyumlu renk paletlerini otomatik olarak oluşturun. Tamamlayıcı, analog ve triadik gibi birden fazla renk modunu destekler",
+    "loading": "Yükleniyor..."
+  },
+  "header": {
+    "title": "Renk Paleti Oluşturucu",
+    "subtitle": "Uyumlu renkler oluşturun"
+  },
+  "buttons": {
+    "generate": "Yeni palet oluştur",
+    "copy": "Kopyala",
+    "exportCSS": "CSS Değişkenleri",
+    "exportTailwind": "Tailwind Yapılandırması",
+    "exportJSON": "JSON",
+    "clearHistory": "Geçmişi temizle"
+  },
+  "labels": {
+    "mode": "Renk modu",
+    "codeFormat": "Renk kodu",
+    "paletteInfo": "Palet bilgisi",
+    "export": "Dışa aktar",
+    "history": "Son paletler"
+  },
+  "modes": {
+    "complementary": "Tamamlayıcı",
+    "analogous": "Analog",
+    "triadic": "Triadik",
+    "tetradic": "Tetradik",
+    "monochromatic": "Monokromatik"
+  },
+  "info": {
+    "contrast": "Kontras analizi",
+    "temperature": "Renk sıcaklığı",
+    "veryDark": "Çok koyu",
+    "dark": "Koyu",
+    "balanced": "Dengeli",
+    "light": "Açık",
+    "warm": "Sıcak",
+    "cool": "Soğuk"
+  },
+  "hints": {
+    "spacebar": "Veya boşluk tuşuna basın"
+  },
+  "messages": {
+    "copied": "Kopyalandı!",
+    "historyEmpty": "Oluşturulan palet yok",
+    "confirmClear": "Geçmişi temizlemek istediğinizden emin misiniz?"
+  },
+  "recommendations": {
+    "title": "Bunları da beğenebilirsiniz"
+  }
+}

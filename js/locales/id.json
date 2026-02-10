@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Pembuat Palet Warna - Pembuatan Warna Harmonis Otomatis",
+    "description": "Hasilkan palet warna yang harmonis secara otomatis. Mendukung beberapa mode warna termasuk pelengkap, analog, dan triadik",
+    "loading": "Memuat..."
+  },
+  "header": {
+    "title": "Pembuat Palet Warna",
+    "subtitle": "Hasilkan warna yang harmonis"
+  },
+  "buttons": {
+    "generate": "Buat palet baru",
+    "copy": "Salin",
+    "exportCSS": "Variabel CSS",
+    "exportTailwind": "Konfigurasi Tailwind",
+    "exportJSON": "JSON",
+    "clearHistory": "Hapus riwayat"
+  },
+  "labels": {
+    "mode": "Mode warna",
+    "codeFormat": "Kode warna",
+    "paletteInfo": "Info palet",
+    "export": "Ekspor",
+    "history": "Palet terbaru"
+  },
+  "modes": {
+    "complementary": "Pelengkap",
+    "analogous": "Analog",
+    "triadic": "Triadik",
+    "tetradic": "Tetradik",
+    "monochromatic": "Monokromatik"
+  },
+  "info": {
+    "contrast": "Analisis kontras",
+    "temperature": "Suhu warna",
+    "veryDark": "Sangat gelap",
+    "dark": "Gelap",
+    "balanced": "Seimbang",
+    "light": "Terang",
+    "warm": "Hangat",
+    "cool": "Sejuk"
+  },
+  "hints": {
+    "spacebar": "Atau tekan bilah spasi"
+  },
+  "messages": {
+    "copied": "Disalin!",
+    "historyEmpty": "Tidak ada palet yang dihasilkan",
+    "confirmClear": "Apakah Anda yakin ingin menghapus riwayat?"
+  },
+  "recommendations": {
+    "title": "Anda mungkin juga menyukai"
+  }
+}

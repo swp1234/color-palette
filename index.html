@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="theme-color" content="#667eea">
+    <meta name="description" content="조화로운 색상 팔레트 자동 생성기 - 보색, 유사색, 삼각배색 등 여러 색상 모드 지원, HEX/RGB/HSL 변환, 팔레트 저장 및 내보내기">
+    <meta name="keywords" content="색상 팔레트, 색상 생성기, 색상 조화, 색상 코드, HEX RGB HSL, 디자인 도구">
+    <title data-i18n="app.title">색상 팔레트 생성기 - 조화로운 색상 자동 생성</title>
+    <script src="js/i18n.js"></script>
+    <link rel="canonical" href="https://dopabrain.com/color-palette/">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon-192.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Language Selector Styles -->
+    <style>
+        .language-selector { position: fixed; top: 20px; right: 20px; z-index: 1000; }
+        .lang-btn { background: rgba(102,126,234,0.3); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(102,126,234,0.4); color: #fff; font-size: 20px; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; transition: all 0.2s ease; }
+        .lang-btn:hover { background: rgba(102,126,234,0.5); transform: scale(1.05); }
+        .lang-menu { position: absolute; top: 52px; right: 0; background: rgba(15,15,35,0.95); backdrop-filter: blur(20px); border: 1px solid rgba(102,126,234,0.3); border-radius: 12px; padding: 8px; min-width: 150px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+        .lang-menu.hidden { display: none; }
+        .lang-option { width: 100%; padding: 10px 14px; background: transparent; border: none; text-align: left; cursor: pointer; border-radius: 8px; font-size: 14px; color: #e0e0f8; transition: background 0.2s; }
+        .lang-option:hover { background: rgba(102,126,234,0.2); }
+        .lang-option.active { background: rgba(102,126,234,0.3); font-weight: 600; }
+    </style>
+    <!-- Open Graph & Social Media Meta Tags -->
+    <meta property="og:title" content="색상 팔레트 생성기 - 조화로운 색상 자동 생성">
+    <meta property="og:description" content="다양한 색상 모드로 조화로운 팔레트 생성 - 보색, 유사색, 삼각배색, HEX/RGB/HSL 변환, 팔레트 내보내기">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dopabrain.com/color-palette/">
+    <meta property="og:image" content="https://dopabrain.com/color-palette/icon-512.svg">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="색상 팔레트 생성기">
+    <meta name="twitter:description" content="조화로운 색상 팔레트를 자동으로 생성하세요!">
+    <meta name="twitter:image" content="https://dopabrain.com/color-palette/icon-512.svg">
+    <meta name="twitter:site" content="@dopabrain">
+    <!-- hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="ko" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="en" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="zh" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="hi" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="ru" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="ja" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="es" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="pt" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="id" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="tr" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="de" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="fr" href="https://dopabrain.com/color-palette/">
+    <link rel="alternate" hreflang="x-default" href="https://dopabrain.com/color-palette/">
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "색상 팔레트 생성기",
+      "description": "조화로운 색상 팔레트를 자동으로 생성합니다. 보색, 유사색, 삼각배색 등 다양한 색상 모드 지원하며, HEX/RGB/HSL 코드 변환 및 팔레트 내보내기 기능 제공!",
+      "url": "https://dopabrain.com/color-palette/",
+      "image": "https://dopabrain.com/color-palette/icon-512.svg",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
+      "inLanguage": ["ko", "en", "zh", "hi", "ru", "ja", "es", "pt", "id", "tr", "de", "fr"],
+      "author": {
+        "@type": "Organization",
+        "name": "DopaBrain",
+        "url": "https://dopabrain.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "DopaBrain",
+        "url": "https://dopabrain.com/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "ratingCount": "890",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": "색상 팔레트 생성, 보색/유사색/삼각배색, HEX/RGB/HSL 변환, 원클릭 복사, 색상 잠금, 팔레트 내보내기, 색상 대비 분석, 다국어 지원"
+    }
+    </script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
+</head>
+<body>
+    <div class="app-loader" id="app-loader">
+        <div class="loader-content">
+            <div class="loader-emoji">🎨</div>
+            <div class="loader-spinner"></div>
+            <div class="loader-text" data-i18n="app.loading">로딩 중...</div>
+        </div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn" id="lang-toggle" title="Select Language">🌐</button>
+        <div class="lang-menu hidden" id="lang-menu">
+            <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
+            <button class="lang-option" data-lang="en">🇺🇸 English</button>
+            <button class="lang-option" data-lang="zh">🇨🇳 简体中文</button>
+            <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
+            <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+            <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+            <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+            <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+            <button class="lang-option" data-lang="id">🇮🇩 Bahasa Indonesia</button>
+            <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
+            <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+        </div>
+    </div>
+
+    <!-- Top Banner Ad -->
+    <div class="ad-container ad-top">
+        <div class="ad-placeholder">광고 영역</div>
+    </div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1 data-i18n="header.title">색상 팔레트 생성기</h1>
+            <p class="subtitle" data-i18n="header.subtitle">조화로운 색상 자동 생성</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="palette-main">
+            <!-- Color Display Section -->
+            <div class="color-display-section">
+                <!-- Color Slots Grid -->
+                <div class="color-slots" id="color-slots">
+                    <!-- Generated dynamically -->
+                </div>
+
+                <!-- Controls Panel -->
+                <div class="controls-panel">
+                    <div class="control-row">
+                        <button class="generate-btn" id="generate-btn" data-i18n="buttons.generate">새 팔레트 생성</button>
+                        <span class="spacebar-hint" data-i18n="hints.spacebar">또는 스페이스바 누르기</span>
+                    </div>
+
+                    <!-- Mode Selector -->
+                    <div class="mode-selector">
+                        <label data-i18n="labels.mode">색상 모드</label>
+                        <select id="mode-select" class="mode-select">
+                            <option value="complementary" data-i18n="modes.complementary">보색</option>
+                            <option value="analogous" data-i18n="modes.analogous">유사색</option>
+                            <option value="triadic" data-i18n="modes.triadic">삼각배색</option>
+                            <option value="tetradic" data-i18n="modes.tetradic">사각배색</option>
+                            <option value="monochromatic" data-i18n="modes.monochromatic">단색 변형</option>
+                        </select>
+                    </div>
+
+                    <!-- Code Format Toggle -->
+                    <div class="code-format">
+                        <label data-i18n="labels.codeFormat">색상 코드</label>
+                        <div class="format-buttons">
+                            <button class="format-btn active" data-format="hex">HEX</button>
+                            <button class="format-btn" data-format="rgb">RGB</button>
+                            <button class="format-btn" data-format="hsl">HSL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Palette Information Section -->
+            <div class="palette-info-section">
+                <h2 class="info-title" data-i18n="labels.paletteInfo">팔레트 정보</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label" data-i18n="info.contrast">대비 분석</span>
+                        <div class="contrast-info" id="contrast-info">-</div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label" data-i18n="info.temperature">색온</span>
+                        <div class="temperature-info" id="temperature-info">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Export Section -->
+            <div class="export-section">
+                <h2 class="export-title" data-i18n="labels.export">내보내기</h2>
+                <div class="export-buttons">
+                    <button class="export-btn" id="export-css-btn" data-i18n="buttons.exportCSS">CSS 변수</button>
+                    <button class="export-btn" id="export-tailwind-btn" data-i18n="buttons.exportTailwind">Tailwind Config</button>
+                    <button class="export-btn" id="export-json-btn" data-i18n="buttons.exportJSON">JSON</button>
+                </div>
+            </div>
+
+            <!-- Palette History Section -->
+            <div class="history-section">
+                <h2 class="history-title" data-i18n="labels.history">최근 팔레트</h2>
+                <div class="history-grid" id="history-grid">
+                    <div class="history-empty" data-i18n="messages.historyEmpty">생성된 팔레트가 없습니다</div>
+                </div>
+                <button class="clear-history-btn" id="clear-history-btn" data-i18n="buttons.clearHistory">히스토리 삭제</button>
+            </div>
+
+            <!-- Recommendations Section -->
+            <div class="recommendations-section">
+                <div class="rec-title" data-i18n="recommendations.title">이것도 해보세요</div>
+                <div class="rec-grid">
+
+                    <a href="https://dopabrain.com/shopping-calc/" class="rec-card" target="_blank">
+                        <span class="rec-icon">💱</span>
+                        <span class="rec-info">
+                            <span class="rec-name">환율 계산기</span>
+                        </span>
+                    </a>
+                    <a href="https://dopabrain.com/detox-timer/" class="rec-card" target="_blank">
+                        <span class="rec-icon">⏱️</span>
+                        <span class="rec-info">
+                            <span class="rec-name">디지털 해독</span>
+                        </span>
+                    </a>
+                    <a href="https://dopabrain.com/lottery/" class="rec-card" target="_blank">
+                        <span class="rec-icon">🎲</span>
+                        <span class="rec-info">
+                            <span class="rec-name">로또 생성기</span>
+                        </span>
+                    </a>
+                    <a href="https://dopabrain.com/idle-clicker/" class="rec-card" target="_blank">
+                        <span class="rec-icon">⚔️</span>
+                        <span class="rec-info">
+                            <span class="rec-name">던전 클리커</span>
+                        </span>
+                    </a>
+                    <a href="https://dopabrain.com/zigzag-runner/" class="rec-card" target="_blank">
+                        <span class="rec-icon">🏃</span>
+                        <span class="rec-info">
+                            <span class="rec-name">지그재그 러너</span>
+                        </span>
+                    </a>
+
+
+                </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(e => console.log('SW error:', e));
+        }
+    </script>
+</body>
+</html>

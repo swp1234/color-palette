@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "Gerador de Paleta de Cores - Geração Automática de Cores Harmonicamente",
+    "description": "Gere automaticamente paletas de cores harmoniosas. Suporta múltiplos modos de cores, incluindo complementar, análogo e triádico",
+    "loading": "Carregando..."
+  },
+  "header": {
+    "title": "Gerador de Paleta de Cores",
+    "subtitle": "Gere cores harmonicamente"
+  },
+  "buttons": {
+    "generate": "Gerar nova paleta",
+    "copy": "Copiar",
+    "exportCSS": "Variáveis CSS",
+    "exportTailwind": "Configuração Tailwind",
+    "exportJSON": "JSON",
+    "clearHistory": "Limpar histórico"
+  },
+  "labels": {
+    "mode": "Modo de cor",
+    "codeFormat": "Código de cor",
+    "paletteInfo": "Informações da paleta",
+    "export": "Exportar",
+    "history": "Paletas recentes"
+  },
+  "modes": {
+    "complementary": "Complementar",
+    "analogous": "Análogo",
+    "triadic": "Triádico",
+    "tetradic": "Tetradico",
+    "monochromatic": "Monocromático"
+  },
+  "info": {
+    "contrast": "Análise de contraste",
+    "temperature": "Temperatura de cor",
+    "veryDark": "Muito escuro",
+    "dark": "Escuro",
+    "balanced": "Equilibrado",
+    "light": "Claro",
+    "warm": "Quente",
+    "cool": "Frio"
+  },
+  "hints": {
+    "spacebar": "Ou pressione a barra de espaço"
+  },
+  "messages": {
+    "copied": "Copiado!",
+    "historyEmpty": "Sem paletas geradas",
+    "confirmClear": "Você tem certeza que deseja limpar o histórico?"
+  },
+  "recommendations": {
+    "title": "Você também pode gostar de"
+  }
+}

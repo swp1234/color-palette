@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "색상 팔레트 생성기 - 조화로운 색상 자동 생성",
+    "description": "조화로운 색상 팔레트를 자동으로 생성합니다. 보색, 유사색, 삼각배색 등 다양한 색상 모드 지원",
+    "loading": "로딩 중..."
+  },
+  "header": {
+    "title": "색상 팔레트 생성기",
+    "subtitle": "조화로운 색상 자동 생성"
+  },
+  "buttons": {
+    "generate": "새 팔레트 생성",
+    "copy": "복사",
+    "exportCSS": "CSS 변수",
+    "exportTailwind": "Tailwind Config",
+    "exportJSON": "JSON",
+    "clearHistory": "히스토리 삭제"
+  },
+  "labels": {
+    "mode": "색상 모드",
+    "codeFormat": "색상 코드",
+    "paletteInfo": "팔레트 정보",
+    "export": "내보내기",
+    "history": "최근 팔레트"
+  },
+  "modes": {
+    "complementary": "보색",
+    "analogous": "유사색",
+    "triadic": "삼각배색",
+    "tetradic": "사각배색",
+    "monochromatic": "단색 변형"
+  },
+  "info": {
+    "contrast": "대비 분석",
+    "temperature": "색온",
+    "veryDark": "매우 어두움",
+    "dark": "어두움",
+    "balanced": "균형잡힘",
+    "light": "밝음",
+    "warm": "따뜻함",
+    "cool": "차가움"
+  },
+  "hints": {
+    "spacebar": "또는 스페이스바 누르기"
+  },
+  "messages": {
+    "copied": "복사됨!",
+    "historyEmpty": "생성된 팔레트가 없습니다",
+    "confirmClear": "히스토리를 삭제하시겠습니까?"
+  },
+  "recommendations": {
+    "title": "이것도 해보세요"
+  }
+}

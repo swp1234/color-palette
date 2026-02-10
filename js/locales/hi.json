@@ -1,0 +1,54 @@
+{
+  "app": {
+    "title": "रंग पैलेट जनरेटर - सामंजस्यपूर्ण रंग स्वचालित पीढ़ी",
+    "description": "सामंजस्यपूर्ण रंग पैलेट स्वचालित रूप से उत्पन्न करें। पूरक, समान और त्रिक सहित कई रंग मोड का समर्थन करता है",
+    "loading": "लोड हो रहा है..."
+  },
+  "header": {
+    "title": "रंग पैलेट जनरेटर",
+    "subtitle": "सामंजस्यपूर्ण रंग उत्पन्न करें"
+  },
+  "buttons": {
+    "generate": "नया पैलेट बनाएं",
+    "copy": "कॉपी करें",
+    "exportCSS": "CSS चर",
+    "exportTailwind": "Tailwind कॉन्फ़िग",
+    "exportJSON": "JSON",
+    "clearHistory": "इतिहास साफ़ करें"
+  },
+  "labels": {
+    "mode": "रंग मोड",
+    "codeFormat": "रंग कोड",
+    "paletteInfo": "पैलेट जानकारी",
+    "export": "निर्यात करें",
+    "history": "हाल के पैलेट"
+  },
+  "modes": {
+    "complementary": "पूरक",
+    "analogous": "समान",
+    "triadic": "त्रिक",
+    "tetradic": "चतुष्कोण",
+    "monochromatic": "एकवर्णीय"
+  },
+  "info": {
+    "contrast": "विपरीत विश्लेषण",
+    "temperature": "रंग तापमान",
+    "veryDark": "बहुत गहरा",
+    "dark": "गहरा",
+    "balanced": "संतुलित",
+    "light": "हल्का",
+    "warm": "गर्म",
+    "cool": "ठंडा"
+  },
+  "hints": {
+    "spacebar": "या स्पेसबार दबाएं"
+  },
+  "messages": {
+    "copied": "कॉपी हो गया!",
+    "historyEmpty": "कोई उत्पन्न पैलेट नहीं",
+    "confirmClear": "क्या आप इतिहास साफ़ करना चाहते हैं?"
+  },
+  "recommendations": {
+    "title": "आपको भी पसंद आ सकता है"
+  }
+}
