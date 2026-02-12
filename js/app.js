@@ -95,6 +95,7 @@ class ColorPaletteGenerator {
     }
 
     generatePalette() {
+        if(typeof gtag!=='undefined') gtag('event','generate_palette');
         // Generate base color
         const baseColor = this.randomColor();
         const palette = [baseColor];
