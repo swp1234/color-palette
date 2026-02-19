@@ -50,5 +50,13 @@
   },
   "recommendations": {
     "title": "Cela pourrait aussi vous plaire"
+  },
+  "nav": {
+    "relatedArticles": "📖 Articles connexes",
+    "backHome": "← Accueil DopaBrain"
+  },
+  "share": {
+    "copied": "✅ Copié!",
+    "copyUrl": "📋 Copier l'URL"
   }
 }

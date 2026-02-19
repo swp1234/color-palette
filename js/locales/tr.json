@@ -50,5 +50,13 @@
   },
   "recommendations": {
     "title": "Bunları da beğenebilirsiniz"
+  },
+  "nav": {
+    "relatedArticles": "📖 İlgili makaleler",
+    "backHome": "← DopaBrain Ana Sayfa"
+  },
+  "share": {
+    "copied": "✅ Kopyalandı!",
+    "copyUrl": "📋 URL'yi Kopyala"
   }
 }

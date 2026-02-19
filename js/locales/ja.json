@@ -50,5 +50,13 @@
   },
   "recommendations": {
     "title": "こちらもお試しください"
+  },
+  "nav": {
+    "relatedArticles": "📖 関連記事",
+    "backHome": "← DopaBrain ホーム"
+  },
+  "share": {
+    "copied": "✅ コピーしました！",
+    "copyUrl": "📋 URLをコピー"
   }
 }
