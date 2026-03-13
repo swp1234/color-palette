@@ -58,5 +58,12 @@
   "share": {
     "copied": "✅ Kopyalandı!",
     "copyUrl": "📋 URL'yi Kopyala"
+  },
+  "related": {
+    "title": "Daha fazla keşfet",
+    "colorBlindness": "Renk Körlüğü Testi",
+    "colorPersonality": "Renk Kişiliği",
+    "colorMemory": "Renk Hafızası",
+    "qrGenerator": "QR Oluşturucu"
   }
 }

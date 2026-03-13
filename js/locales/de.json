@@ -58,5 +58,12 @@
   "share": {
     "copied": "✅ Kopiert!",
     "copyUrl": "📋 URL kopieren"
+  },
+  "related": {
+    "title": "Mehr entdecken",
+    "colorBlindness": "Farbenblindheitstest",
+    "colorPersonality": "Farbpersönlichkeit",
+    "colorMemory": "Farbgedächtnis",
+    "qrGenerator": "QR-Generator"
   }
 }

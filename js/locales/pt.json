@@ -58,5 +58,12 @@
   "share": {
     "copied": "✅ Copiado!",
     "copyUrl": "📋 Copiar URL"
+  },
+  "related": {
+    "title": "Explore mais",
+    "colorBlindness": "Teste de daltonismo",
+    "colorPersonality": "Personalidade das cores",
+    "colorMemory": "Memória de cores",
+    "qrGenerator": "Gerador QR"
   }
 }

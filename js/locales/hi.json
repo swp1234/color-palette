@@ -58,5 +58,12 @@
   "share": {
     "copied": "✅ कॉपी हो गया!",
     "copyUrl": "📋 URL कॉपी करें"
+  },
+  "related": {
+    "title": "और खोजें",
+    "colorBlindness": "रंग अंधापन",
+    "colorPersonality": "रंग व्यक्तित्व",
+    "colorMemory": "रंग स्मृति",
+    "qrGenerator": "QR जनरेटर"
   }
 }

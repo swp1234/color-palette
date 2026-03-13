@@ -58,5 +58,12 @@
   "share": {
     "copied": "✅ コピーしました！",
     "copyUrl": "📋 URLをコピー"
+  },
+  "related": {
+    "title": "もっと楽しむ",
+    "colorBlindness": "色覚テスト",
+    "colorPersonality": "カラー性格診断",
+    "colorMemory": "カラーメモリー",
+    "qrGenerator": "QRジェネレーター"
   }
 }

@@ -58,5 +58,12 @@
   "share": {
     "copied": "✅ 已复制！",
     "copyUrl": "📋 复制链接"
+  },
+  "related": {
+    "title": "探索更多",
+    "colorBlindness": "色盲测试",
+    "colorPersonality": "色彩性格",
+    "colorMemory": "颜色记忆",
+    "qrGenerator": "二维码生成器"
   }
 }

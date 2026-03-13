@@ -58,5 +58,12 @@
   "share": {
     "copied": "✅ Copied!",
     "copyUrl": "📋 Copy URL"
+  },
+  "related": {
+    "title": "More to Explore",
+    "colorBlindness": "Color Blindness",
+    "colorPersonality": "Color Personality",
+    "colorMemory": "Color Memory",
+    "qrGenerator": "QR Generator"
   }
 }
