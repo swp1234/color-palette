@@ -490,7 +490,10 @@ class ColorPaletteGenerator {
     }
 
     loadState() {
-        const saved = localStorage.getItem('colorPaletteState');
+        let saved = null;
+        try {
+            saved = localStorage.getItem('colorPaletteState');
+        } catch (e) {}
         if (saved) {
             try {
                 const state = JSON.parse(saved);
@@ -499,7 +502,8 @@ class ColorPaletteGenerator {
                 this.colorMode = state.colorMode || 'complementary';
                 this.codeFormat = state.codeFormat || 'hex';
                 this.history = state.history || [];
-                if (state.language && state.language !== i18n.currentLang) {
+                const hasUrlLang = new URLSearchParams(window.location.search).has('lang');
+                if (!hasUrlLang && state.language && state.language !== i18n.currentLang) {
                     i18n.setLanguage(state.language);
                 }
                 if (this.currentPalette.length > 0) {
