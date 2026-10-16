@@ -62,8 +62,8 @@
   "related": {
     "title": "More to Explore",
     "colorBlindness": "Color Blindness",
-    "colorPersonality": "Color Personality",
-    "colorMemory": "Color Memory",
-    "qrGenerator": "QR Generator"
+    "futureSelf": "Future Self",
+    "stressCheck": "Stress Check",
+    "unitConverter": "Unit Converter"
   }
 }

@@ -62,8 +62,8 @@
   "related": {
     "title": "Mehr entdecken",
     "colorBlindness": "Farbenblindheitstest",
-    "colorPersonality": "Farbpersönlichkeit",
-    "colorMemory": "Farbgedächtnis",
-    "qrGenerator": "QR-Generator"
+    "futureSelf": "Zukunfts-Ich",
+    "stressCheck": "Stress-Test",
+    "unitConverter": "Einheitenumrechner"
   }
 }

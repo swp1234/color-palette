@@ -62,8 +62,8 @@
   "related": {
     "title": "Jelajahi lainnya",
     "colorBlindness": "Tes Buta Warna",
-    "colorPersonality": "Kepribadian Warna",
-    "colorMemory": "Memori Warna",
-    "qrGenerator": "Generator QR"
+    "futureSelf": "Diri Masa Depan",
+    "stressCheck": "Tes Stres",
+    "unitConverter": "Konverter Satuan"
   }
 }

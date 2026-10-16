@@ -62,8 +62,8 @@
   "related": {
     "title": "Daha fazla keşfet",
     "colorBlindness": "Renk Körlüğü Testi",
-    "colorPersonality": "Renk Kişiliği",
-    "colorMemory": "Renk Hafızası",
-    "qrGenerator": "QR Oluşturucu"
+    "futureSelf": "Gelecekteki Ben",
+    "stressCheck": "Stres Testi",
+    "unitConverter": "Birim Dönüştürücü"
   }
 }

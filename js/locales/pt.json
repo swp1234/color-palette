@@ -62,8 +62,8 @@
   "related": {
     "title": "Explore mais",
     "colorBlindness": "Teste de daltonismo",
-    "colorPersonality": "Personalidade das cores",
-    "colorMemory": "Memória de cores",
-    "qrGenerator": "Gerador QR"
+    "futureSelf": "Eu Futuro",
+    "stressCheck": "Teste de Estresse",
+    "unitConverter": "Conversor de Unidades"
   }
 }

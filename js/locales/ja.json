@@ -62,8 +62,8 @@
   "related": {
     "title": "もっと楽しむ",
     "colorBlindness": "色覚テスト",
-    "colorPersonality": "カラー性格診断",
-    "colorMemory": "カラーメモリー",
-    "qrGenerator": "QRジェネレーター"
+    "futureSelf": "未来の自分",
+    "stressCheck": "ストレスチェック",
+    "unitConverter": "単位変換器"
   }
 }

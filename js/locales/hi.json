@@ -62,8 +62,8 @@
   "related": {
     "title": "और खोजें",
     "colorBlindness": "रंग अंधापन",
-    "colorPersonality": "रंग व्यक्तित्व",
-    "colorMemory": "रंग स्मृति",
-    "qrGenerator": "QR जनरेटर"
+    "futureSelf": "भविष्य का आत्म",
+    "stressCheck": "तनाव जांच",
+    "unitConverter": "यूनिट कनवर्टर"
   }
 }

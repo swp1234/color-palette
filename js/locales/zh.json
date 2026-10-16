@@ -62,8 +62,8 @@
   "related": {
     "title": "探索更多",
     "colorBlindness": "色盲测试",
-    "colorPersonality": "色彩性格",
-    "colorMemory": "颜色记忆",
-    "qrGenerator": "二维码生成器"
+    "futureSelf": "未来自画像",
+    "stressCheck": "压力测试",
+    "unitConverter": "单位转换器"
   }
 }

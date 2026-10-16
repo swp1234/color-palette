@@ -62,8 +62,8 @@
   "related": {
     "title": "더 많은 콘텐츠",
     "colorBlindness": "색각 테스트",
-    "colorPersonality": "색상 성격",
-    "colorMemory": "색상 기억력",
-    "qrGenerator": "QR 생성기"
+    "futureSelf": "미래 자아",
+    "stressCheck": "스트레스 지수",
+    "unitConverter": "단위 변환기"
   }
 }

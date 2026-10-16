@@ -62,8 +62,8 @@
   "related": {
     "title": "Ещё интересное",
     "colorBlindness": "Тест на дальтонизм",
-    "colorPersonality": "Цветовая личность",
-    "colorMemory": "Цветовая память",
-    "qrGenerator": "QR генератор"
+    "futureSelf": "Будущее я",
+    "stressCheck": "Тест на стресс",
+    "unitConverter": "Конвертер единиц"
   }
 }
