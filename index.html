@@ -238,14 +238,16 @@
     </div>
 
     <!-- Export Modal -->
-    <div class="export-modal" id="export-modal">
+    <div class="modal export-modal" id="export-modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 id="export-modal-title" data-i18n="modal.exportTitle">내보내기</h2>
                 <button class="modal-close" id="modal-close">&times;</button>
             </div>
-            <textarea id="export-textarea" readonly></textarea>
-            <button class="copy-export-btn" id="copy-export-btn" data-i18n="buttons.copy">복사</button>
+            <div class="modal-body">
+                <textarea id="export-textarea" class="export-textarea" readonly></textarea>
+                <button class="copy-export-btn" id="copy-export-btn" data-i18n="buttons.copy">복사</button>
+            </div>
         </div>
     </div>
 
@@ -287,10 +289,10 @@
     <nav style="max-width:480px;margin:24px auto 0;padding:0 16px" aria-label="Related articles">
       <p style="font-size:13px;font-weight:600;margin-bottom:8px;opacity:0.6;text-align:center" data-i18n="nav.relatedArticles">📖 Related Articles</p>
       <div style="display:flex;flex-direction:column;gap:6px">
-        <a href="/portal/blog/en/color-palette-generator-guide.html" style="display:block;padding:10px 14px;background:rgba(128,128,128,0.1);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;opacity:0.7">Color Palette Generator Guide - Create Perfect Color Schemes</a>
-        <a href="/portal/blog/en/free-games.html" style="display:block;padding:10px 14px;background:rgba(128,128,128,0.1);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;opacity:0.7">Best Free Browser Tools & Games 2026</a>
+        <a href="/portal/blog/en/color-palette-generator-guide.html" style="display:flex;align-items:center;min-height:44px;padding:10px 14px;background:rgba(128,128,128,0.1);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;opacity:0.7;touch-action:manipulation">Color Palette Generator Guide - Create Perfect Color Schemes</a>
+        <a href="/portal/blog/en/free-games.html" style="display:flex;align-items:center;min-height:44px;padding:10px 14px;background:rgba(128,128,128,0.1);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;opacity:0.7;touch-action:manipulation">Best Free Browser Tools & Games 2026</a>
       </div>
-      <p style="text-align:center;margin-top:16px"><a href="https://dopabrain.com/portal/" class="back-link" style="opacity:0.5;font-size:13px;text-decoration:none;color:inherit" data-i18n="nav.backHome">← DopaBrain Home</a></p>
+      <p style="text-align:center;margin-top:16px"><a href="https://dopabrain.com/portal/" class="back-link" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;opacity:0.5;font-size:13px;text-decoration:none;color:inherit;touch-action:manipulation" data-i18n="nav.backHome">← DopaBrain Home</a></p>
     </nav>
 
     <div style="max-width:420px;margin:20px auto;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
