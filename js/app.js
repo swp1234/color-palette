@@ -445,6 +445,7 @@ class ColorPaletteGenerator {
     }
 
     updateLanguageDisplay() {
+        preserveLanguageLinks();
         // Update mode select options
         const modeSelect = document.getElementById('mode-select');
         const options = {
@@ -537,4 +538,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     app = new ColorPaletteGenerator();
+    preserveLanguageLinks();
 });
+
+function preserveLanguageLinks() {
+    try {
+        const lang = (window.i18n && window.i18n.currentLang) || new URLSearchParams(window.location.search).get('lang') || 'ko';
+        document.querySelectorAll('.related-card, a[href^="/color-blindness/"], a[href^="/future-self/"], a[href^="/stress-check/"], a[href^="/unit-converter/"]').forEach(function(a) {
+            const href = a.getAttribute('href');
+            if (!href || href.startsWith('/portal/')) return;
+            const url = new URL(href, window.location.origin);
+            if (lang) {
+                url.searchParams.set('lang', lang);
+            }
+            url.searchParams.set('source', 'color_palette_result');
+            a.setAttribute('href', url.pathname + url.search + url.hash);
+
+            if (!a.__ctaBound) {
+                a.__ctaBound = true;
+                a.addEventListener('click', function() {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'content_cta_click', {
+                            cta_surface: 'related_tools',
+                            destination: a.getAttribute('href'),
+                            source: 'color_palette_result',
+                            lang: lang || 'ko'
+                        });
+                    }
+                });
+            }
+        });
+    } catch (e) {}
+}
