@@ -65,5 +65,30 @@
     "futureSelf": "Diri Masa Depan",
     "stressCheck": "Tes Stres",
     "unitConverter": "Konverter Satuan"
+  },
+  "about": {
+    "summaryTitle": "Panduan Harmoni Warna: Teori, Kontras & FAQ",
+    "scienceDesc": "Teori warna memadukan fisika optik dan persepsi visual manusia. Berdasarkan roda warna Johannes Itten, skema geometris menghitung sudut seimbang melintasi spektrum untuk menghadirkan resonansi emosional dan tata letak yang jelas.",
+    "boundary": "Standar Desain: Selalu uji rasio kontras teks terhadap latar belakang minimal 4.5:1 sesuai panduan WCAG 2.1 AA untuk aksesibilitas ramah pengguna.",
+    "schemesHeading": "Model Harmoni Warna Utama",
+    "schemeComp": "Komplementer (180°):",
+    "descComp": "Warna berseberangan pada roda warna yang menghasilkan kontras visual tajam untuk tombol tindakan.",
+    "schemeAnalog": "Analog (30°-60°):",
+    "descAnalog": "Warna berdampingan yang memberikan transisi lembut dan suasana visual yang menenangkan.",
+    "schemeTriad": "Triadik (120°):",
+    "descTriad": "Tiga warna berjarak sama yang menghadirkan kecerahan seimbang tanpa kejenuhan berlebih.",
+    "schemeMono": "Monokromatik:",
+    "descMono": "Variasi tingkat terang dan saturasi dari satu rona dasar untuk tampilan minimalis elegan.",
+    "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+    "faq1Q": "Q: Bagaimana rumus harmoni warna dihitung?",
+    "faq1A": "A: Dihitung menggunakan sudut derajat pada lingkaran 360° (180° komplementer, 120° triadik).",
+    "faq2Q": "Q: Apa perbedaan format HEX, RGB, dan HSL?",
+    "faq2A": "A: HEX adalah kode heksadesimal, RGB mengatur intensitas cahaya (0-255), dan HSL paling cocok dengan persepsi manusia.",
+    "faq3Q": "Q: Berapa rasio kontras yang disyaratkan WCAG?",
+    "faq3A": "A: Standar AA mewajibkan rasio kontras minimal 4.5:1 untuk teks biasa dan 3.0:1 untuk judul besar.",
+    "faq4Q": "Q: Bisakah mengunci warna merek saat membuat palet baru?",
+    "faq4A": "A: Ya! Klik ikon gembok pada kartu warna untuk menguncinya saat menekan Spasi atau Buat Palet.",
+    "reviewDate": "Tinjauan Editorial: November 2026",
+    "reviewTeam": "Tim Sistem Desain & Optik DopaBrain"
   }
 }

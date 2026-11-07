@@ -65,5 +65,30 @@
     "futureSelf": "Soi Futur",
     "stressCheck": "Test de Stress",
     "unitConverter": "Convertisseur d'Unités"
+  },
+  "about": {
+    "summaryTitle": "Guide de l'Harmonie des Couleurs: Théorie, Contraste & FAQ",
+    "scienceDesc": "La théorie des couleurs allie physique optique et psychologie cognitive. D'après le cercle chromatique de Johannes Itten, les schémas géométriques calculent des angles équilibrés pour garantir lisibilité et impact esthétique.",
+    "boundary": "Norme d'accessibilité: Veillez à respecter un contraste d'au moins 4.5:1 (norme WCAG 2.1 AA) pour le texte sur fond coloré.",
+    "schemesHeading": "Modèles Majeurs d'Harmonie Chromatique",
+    "schemeComp": "Complémentaire (180°):",
+    "descComp": "Couleurs diamétralement opposées offrant un contraste visuel fort pour les boutons d'action.",
+    "schemeAnalog": "Analogue (30°-60°):",
+    "descAnalog": "Nuances adjacentes créant une atmosphère douce, naturelle et sereine.",
+    "schemeTriad": "Triadique (120°):",
+    "descTriad": "Trois teintes équidistantes assurant une dynamique vive et équilibrée.",
+    "schemeMono": "Monochromatique:",
+    "descMono": "Variations de clarté et de saturation d'une teinte unique pour une élégance épurée.",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Q: Comment fonctionne la géométrie des couleurs?",
+    "faq1A": "A: Elle mesure les intervalles angulaires sur 360° pour optimiser la compatibilité rétinienne.",
+    "faq2Q": "Q: Quelle différence entre HEX, RGB et HSL?",
+    "faq2A": "A: HEX est hexadécimal, RGB gère la lumière des pixels (0-255), et HSL modélise la perception humaine.",
+    "faq3Q": "Q: Quel est le ratio de contraste minimal WCAG?",
+    "faq3A": "A: Le niveau AA requiert un ratio minimum de 4.5:1 pour le texte courant (3.0:1 pour les grands titres).",
+    "faq4Q": "Q: Peut-on verrouiller une couleur de marque?",
+    "faq4A": "A: Oui, cliquez sur le cadenas pour figer une nuance pendant que vous renouvelez les autres teintes.",
+    "reviewDate": "Validation éditoriale: novembre 2026",
+    "reviewTeam": "Équipe Design & Optique DopaBrain"
   }
 }

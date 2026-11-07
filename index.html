@@ -7,7 +7,7 @@
     <meta name="robots" content="max-image-preview:large">
     <meta name="theme-color" content="#667eea">
     <meta name="description" content="Generate harmonious color palettes instantly. Complementary, analogous, triadic modes with HEX/RGB/HSL conversion. Save and export palettes. Try free!">
-    <meta name="dateModified" content="2026-10-24">
+    <meta name="dateModified" content="2026-11-07">
     <meta name="keywords" content="색상 팔레트, 색상 생성기, 색상 조화, 색상 코드, HEX RGB HSL, 디자인 도구">
     <title data-i18n="app.title">Color Palette Generator - Free Harmony Creator | DopaBrain</title>
     <link rel="canonical" href="https://dopabrain.com/color-palette/">
@@ -116,6 +116,47 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
+    <!-- Schema.org - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is color harmony and how do complementary, analogous, and triadic schemes work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Color harmony uses geometric relationships on Johannes Itten's 12-color wheel to create visually pleasing palettes. Complementary palettes pair opposite hues (180° apart) for vibrant energy; analogous palettes combine adjacent hues (30°-60° apart) for natural cohesion; triadic palettes balance three equidistant hues (120° apart) for versatile contrast."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do HEX, RGB, and HSL color models differ in web design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HEX encodes red, green, and blue light as 6-digit hexadecimal values (#RRGGBB). RGB defines screen light intensity from 0 to 255 per channel. HSL (Hue, Saturation, Lightness) aligns with human perception, where Hue is a 0-360° angle on the color circle, Saturation is color purity (0-100%), and Lightness indicates brightness (0-100%)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the WCAG accessibility contrast requirements for UI color palettes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Web Content Accessibility Guidelines (WCAG 2.1) require a minimum luminance contrast ratio of 4.5:1 for standard body text and 3.0:1 for large text (at least 18pt or 14pt bold) to ensure readability for people with low vision or color vision deficiencies (AA standard)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I lock specific colors while generating random palettes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Clicking the lock icon on any color card locks that specific hue and hex value in place. Subsequent spacebar presses or clicks on 'Generate' will only recalculate the unlocked color slots, allowing you to build harmonies around your primary brand color."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-link" data-i18n="accessibility.skipToMain">Skip to main content</a>
@@ -291,6 +332,50 @@
       </div>
       <p style="text-align:center;margin-top:16px"><a href="https://dopabrain.com/portal/" class="back-link" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;opacity:0.5;font-size:13px;text-decoration:none;color:inherit;touch-action:manipulation" data-i18n="nav.backHome">← DopaBrain Home</a></p>
     </nav>
+
+    
+    <!-- Color Science & Harmony Guide / FAQ Section -->
+    <section class="about-section" style="max-width:480px;margin:24px auto 16px;padding:0 12px;box-sizing:border-box;">
+      <details class="about-test faq-accordion" open style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;text-align:left;">
+        <summary data-i18n="about.summaryTitle" style="min-height:48px;padding:14px 18px;color:#a3b8ff;cursor:pointer;font-size:15px;font-weight:700;list-style:none;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;touch-action:manipulation;">About Color Harmony: Theory, Contrast & FAQ</summary>
+        <div class="about-content faq-content" style="padding:0 18px 20px;box-sizing:border-box;">
+          <p data-i18n="about.scienceDesc" style="font-size:13px;line-height:1.7;color:#cbd5e1;margin:0 0 12px;">Color theory bridges optical physics and human perception. Using Johannes Itten's chromatic circle and Goethe's color psychology, harmonic schemes calculate balanced geometric angles across the visual spectrum to establish emotional resonance and visual hierarchy.</p>
+          <p class="about-note" data-i18n="about.boundary" style="font-size:12px;font-style:italic;color:#94a3b8;border-left:3px solid #667eea;padding-left:10px;margin:12px 0 16px;line-height:1.6;">Design Best Practice: When applying palettes in web applications, always test text-to-background contrast ratios against WCAG 2.1 AA benchmarks (minimum 4.5:1) for accessible user experiences.</p>
+
+          <h3 class="about-heading" data-i18n="about.schemesHeading" style="font-size:15px;color:#fff;margin:18px 0 10px;font-weight:700;border-left:3px solid #667eea;padding-left:8px;">Core Color Harmony Models</h3>
+          <ul class="about-list" style="list-style:none;padding:0;margin:0 0 16px;">
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.schemeComp">Complementary (180°):</strong> <span data-i18n="about.descComp">Opposite hues on the color wheel producing maximum optical contrast and punchy CTA buttons.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.schemeAnalog">Analogous (30°-60°):</strong> <span data-i18n="about.descAnalog">Adjacent hues creating organic transitions reminiscent of natural landscapes and serene UI themes.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.schemeTriad">Triadic (120°):</strong> <span data-i18n="about.descTriad">Three equidistant points on the color wheel offering vibrant balance without overwhelming color saturation.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.schemeMono">Monochromatic:</strong> <span data-i18n="about.descMono">Single base hue modulated through lightness tints and shade depths for elegant minimalism.</span></li>
+          </ul>
+
+          <h3 class="about-heading faq-heading" data-i18n="about.faqTitle" style="font-size:15px;color:#fff;margin:18px 0 10px;font-weight:700;border-left:3px solid #667eea;padding-left:8px;">Frequently Asked Questions</h3>
+          <div class="faq-section" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq1Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: What is color harmony and how do geometric schemes work?</strong>
+              <p class="about-faq-a" data-i18n="about.faq1A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: Color harmony maps chromatic angles around a 360° circle. Complementary (180°), analogous (30°-60°), and triadic (120°) calculations preserve balance across human eye perception.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq2Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: How do HEX, RGB, and HSL formats differ?</strong>
+              <p class="about-faq-a" data-i18n="about.faq2A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: HEX is a base-16 code for RGB channels. RGB directly controls subpixel brightness (0-255). HSL (Hue angle, Saturation %, Lightness %) mirrors human color intuition best.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq3Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: What are the WCAG accessibility contrast requirements?</strong>
+              <p class="about-faq-a" data-i18n="about.faq3A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: WCAG 2.1 AA mandates a 4.5:1 luminance contrast ratio for body text (3.0:1 for large headlines) so users with visual impairments can read effortlessly.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq4Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: Can I lock primary brand colors while generating new sets?</strong>
+              <p class="about-faq-a" data-i18n="about.faq4A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: Yes! Tap the lock icon on any swatch. Locked swatches remain untouched when pressing Spacebar or 'Generate', allowing harmonious companion color discovery.</p>
+            </div>
+          </div>
+
+          <div class="about-review-meta" style="font-size:11px;color:#64748b;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.08);">
+            <span data-i18n="about.reviewDate">Editorial Review: November 2026</span> • <span data-i18n="about.reviewTeam">DopaBrain Design Systems & Optics Team</span>
+          </div>
+        </div>
+      </details>
+    </section>
 
     <div class="related-tests" style="max-width:420px;margin:20px auto;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1);">
       <h3 data-i18n="related.title" style="font-size:16px;color:#a0a0b8;margin-bottom:12px;text-align:center;">More to Explore</h3>

@@ -65,5 +65,30 @@
     "futureSelf": "Eu Futuro",
     "stressCheck": "Teste de Estresse",
     "unitConverter": "Conversor de Unidades"
+  },
+  "about": {
+    "summaryTitle": "Guia de Harmonia de Cores: Teoria, Contraste e FAQ",
+    "scienceDesc": "A teoria das cores integra física óptica e percepção humana. Através do círculo cromático de Johannes Itten, modelos geométricos calculam ângulos balanceados para criar hierarquias visuais agradáveis.",
+    "boundary": "Acessibilidade: Ao criar interfaces digitais, mantenha o contraste mínimo de 4.5:1 preconizado pelas diretrizes WCAG 2.1 AA.",
+    "schemesHeading": "Modelos Principais de Harmonia de Cores",
+    "schemeComp": "Complementar (180°):",
+    "descComp": "Cores diametralmente opostas no círculo que geram alto contraste, ideais para botões CTA.",
+    "schemeAnalog": "Análogo (30°-60°):",
+    "descAnalog": "Tons vizinhos que proporcionam transições suaves, transmitindo calma e naturalidade.",
+    "schemeTriad": "Triádico (120°):",
+    "descTriad": "Três cores equidistantes no círculo cromático, unindo vivacidade e estabilidade.",
+    "schemeMono": "Monocromático:",
+    "descMono": "Variações de brilho e saturação em uma única matriz tonal para visuais minimalistas.",
+    "faqTitle": "Perguntas Frequentes (FAQ)",
+    "faq1Q": "Q: Como funciona o cálculo de harmonia cromática?",
+    "faq1A": "A: Utiliza relações angulares no círculo de 360° para gerar equilíbrios ópticos agradáveis.",
+    "faq2Q": "Q: Qual a diferença entre HEX, RGB e HSL?",
+    "faq2A": "A: HEX é base 16, RGB regula a luz dos canais (0-255) e HSL reflete matiz, saturação e luminosidade.",
+    "faq3Q": "Q: Qual o contraste recomendado pelo WCAG?",
+    "faq3A": "A: O nível AA exige 4.5:1 para textos normais e 3.0:1 para tipografias em destaque.",
+    "faq4Q": "Q: Posso fixar uma cor principal e gerar as restantes?",
+    "faq4A": "A: Sim! Basta clicar no ícone de cadeado para travar a cor desejada durante novas gerações.",
+    "reviewDate": "Revisão editorial: novembro de 2026",
+    "reviewTeam": "Equipe de Design e Óptica DopaBrain"
   }
 }

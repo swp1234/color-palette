@@ -65,5 +65,30 @@
     "futureSelf": "Gelecekteki Ben",
     "stressCheck": "Stres Testi",
     "unitConverter": "Birim Dönüştürücü"
+  },
+  "about": {
+    "summaryTitle": "Renk Uyumu Rehberi: Renk Teorisi, Kontrast & SSS",
+    "scienceDesc": "Renk teorisi, optik fizik ile görsel algıyı birleştirir. Johannes Itten'in 12'li renk çemberine dayanan geometrik uyum şemaları, görsel hiyerarşi ve duygusal etki yaratmak için dengeli açılar hesaplar.",
+    "boundary": "Tasarım Kriteri: Arayüz tasarımında WCAG 2.1 AA standardına göre metin ile arka plan arasında en az 4.5:1 kontrast oranı sağlanmalıdır.",
+    "schemesHeading": "Temel Renk Uyumu Modelleri",
+    "schemeComp": "Tamamlayıcı (180°):",
+    "descComp": "Renk çemberinde birbirine zıt renkler, yüksek görsel kontrast sağlayarak dikkat çekici butonlar için idealdir.",
+    "schemeAnalog": "Benzer (30°-60°):",
+    "descAnalog": "Çemberde yan yana bulunan tonlar, doğal ve huzurlu bir görsel akış oluşturur.",
+    "schemeTriad": "Üçlü (120°):",
+    "descTriad": "Çemberde 120 derecelik eşit aralıklarla yer alan üç renk, canlı ve dengeli paletler sunar.",
+    "schemeMono": "Monokromatik:",
+    "descMono": "Tek bir ana rengin açıklık ve koyuluk tonlarıyla oluşturulan zarif ve minimalist palettir.",
+    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
+    "faq1Q": "Q: Renk uyumu kuralları nasıl çalışır?",
+    "faq1A": "A: 360 derecelik dairede geometrik açılar hesaplanarak gözü yormayan dengeli kombinasyonlar üretilir.",
+    "faq2Q": "Q: HEX, RGB ve HSL arasındaki fark nedir?",
+    "faq2A": "A: HEX 16'lık tabanda bir koddur, RGB piksel ışık değerlerini (0-255) belirtir, HSL ise renk özü, doygunluk ve açıklığı ifade eder.",
+    "faq3Q": "Q: WCAG erişilebilirlik kontrast şartı nedir?",
+    "faq3A": "A: Standart metinler için en az 4.5:1, büyük başlıklar için en az 3.0:1 kontrast oranı gerekir.",
+    "faq4Q": "Q: İstediğim bir rengi sabitleyip diğerlerini değiştirebilir miyim?",
+    "faq4A": "A: Evet! Kilit simgesine tıklayarak rengi sabitleyebilir ve diğer renkleri bu renge uyumlu şekilde yenileyebilirsiniz.",
+    "reviewDate": "Editör İncelemesi: Kasım 2026",
+    "reviewTeam": "DopaBrain Tasarım Sistemleri & Optik Ekibi"
   }
 }

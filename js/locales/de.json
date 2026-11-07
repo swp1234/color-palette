@@ -65,5 +65,30 @@
     "futureSelf": "Zukunfts-Ich",
     "stressCheck": "Stress-Test",
     "unitConverter": "Einheitenumrechner"
+  },
+  "about": {
+    "summaryTitle": "Farbharmonie-Leitfaden: Farbtheorie, Kontrast & FAQ",
+    "scienceDesc": "Die Farbtheorie verbindet optische Physik mit menschlicher Wahrnehmung. Basierend auf Johannes Ittens 12-teiligem Farbkreis berechnen harmonische Schemata geometrisch ausgewogene Farbwinkel für optimale visuelle Hierarchien.",
+    "boundary": "Design-Richtlinie: Achten Sie bei UI-Entwürfen auf das WCAG 2.1 AA Kontrastverhältnis von mindestens 4,5:1 für barrierefreie Lesbarkeit.",
+    "schemesHeading": "Wesentliche Farbharmonie-Modelle",
+    "schemeComp": "Komplementär (180°):",
+    "descComp": "Gegenüberliegende Farben im Farbkreis für maximalen Kontrast und akzentuierte Call-to-Action-Elemente.",
+    "schemeAnalog": "Analog (30°-60°):",
+    "descAnalog": "Benachbarte Farbtöne für harmonische, natürliche Verläufe und visuelle Ruhe.",
+    "schemeTriad": "Triadisch (120°):",
+    "descTriad": "Drei gleichmäßig im 120°-Abstand verteilte Farben für lebendige und dennoch ausgewogene Paletten.",
+    "schemeMono": "Monochromatisch:",
+    "descMono": "Abstufungen von Helligkeit und Sättigung eines einzigen Basistons für elegantes Minimaldesign.",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Q: Wie berechnet sich harmonische Farbgebung?",
+    "faq1A": "A: Durch geometrische Winkelaufteilung im 360°-Farbkreis (z. B. 180° Komplementär, 120° Triadisch).",
+    "faq2Q": "Q: Was unterscheidet HEX, RGB und HSL?",
+    "faq2A": "A: HEX codiert hexadezimal, RGB regelt Lichtstärken (0-255), HSL erfasst Farbton, Sättigung und Helligkeit intuitiv.",
+    "faq3Q": "Q: Welche Kontrastwerte verlangt WCAG 2.1?",
+    "faq3A": "A: Mindestens 4,5:1 für Fließtext und 3,0:1 für große Überschriften (AA-Standard).",
+    "faq4Q": "Q: Können Markenfarben fixiert werden?",
+    "faq4A": "A: Ja. Ein Klick auf das Schloss-Symbol fixiert den Farbton, während neue Begleitfarben generiert werden.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Design Systems & Optik-Team"
   }
 }

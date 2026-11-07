@@ -65,5 +65,30 @@
     "futureSelf": "Future Self",
     "stressCheck": "Stress Check",
     "unitConverter": "Unit Converter"
+  },
+  "about": {
+    "summaryTitle": "About Color Harmony: Theory, Contrast & FAQ",
+    "scienceDesc": "Color theory bridges optical physics and human perception. Using Johannes Itten's chromatic circle and Goethe's color psychology, harmonic schemes calculate balanced geometric angles across the visual spectrum to establish emotional resonance and visual hierarchy.",
+    "boundary": "Design Best Practice: When applying palettes in web applications, always test text-to-background contrast ratios against WCAG 2.1 AA benchmarks (minimum 4.5:1) for accessible user experiences.",
+    "schemesHeading": "Core Color Harmony Models",
+    "schemeComp": "Complementary (180°):",
+    "descComp": "Opposite hues on the color wheel producing maximum optical contrast and punchy CTA buttons.",
+    "schemeAnalog": "Analogous (30°-60°):",
+    "descAnalog": "Adjacent hues creating organic transitions reminiscent of natural landscapes and serene UI themes.",
+    "schemeTriad": "Triadic (120°):",
+    "descTriad": "Three equidistant points on the color wheel offering vibrant balance without overwhelming color saturation.",
+    "schemeMono": "Monochromatic:",
+    "descMono": "Single base hue modulated through lightness tints and shade depths for elegant minimalism.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "Q: What is color harmony and how do geometric schemes work?",
+    "faq1A": "A: Color harmony maps chromatic angles around a 360° circle. Complementary (180°), analogous (30°-60°), and triadic (120°) calculations preserve balance across human eye perception.",
+    "faq2Q": "Q: How do HEX, RGB, and HSL formats differ?",
+    "faq2A": "A: HEX is a base-16 code for RGB channels. RGB directly controls subpixel brightness (0-255). HSL (Hue angle, Saturation %, Lightness %) mirrors human color intuition best.",
+    "faq3Q": "Q: What are the WCAG accessibility contrast requirements?",
+    "faq3A": "A: WCAG 2.1 AA mandates a 4.5:1 luminance contrast ratio for body text (3.0:1 for large headlines) so users with visual impairments can read effortlessly.",
+    "faq4Q": "Q: Can I lock primary brand colors while generating new sets?",
+    "faq4A": "A: Yes! Tap the lock icon on any swatch. Locked swatches remain untouched when pressing Spacebar or 'Generate', allowing harmonious companion color discovery.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Design Systems & Optics Team"
   }
 }

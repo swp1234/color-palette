@@ -65,5 +65,30 @@
     "futureSelf": "Yo Futuro",
     "stressCheck": "Test de Estrés",
     "unitConverter": "Conversor de Unidades"
+  },
+  "about": {
+    "summaryTitle": "Guía de Armonía del Color: Teoría, Contraste y FAQ",
+    "scienceDesc": "La teoría del color une la óptica física con la percepción visual. Basado en el círculo cromático de Itten y la psicología del color, los esquemas geométricos calculan ángulos armónicos para crear jerarquías visuales atractivas.",
+    "boundary": "Estándar de accesibilidad: Al diseñar interfaces digitales, asegúrese de cumplir con el ratio de contraste WCAG 2.1 AA (mínimo 4.5:1 para texto normal).",
+    "schemesHeading": "Modelos Principales de Armonía Cromática",
+    "schemeComp": "Complementario (180°):",
+    "descComp": "Colores opuestos en la rueda cromática con máximo contraste, ideales para botones de acción (CTA).",
+    "schemeAnalog": "Análogo (30°-60°):",
+    "descAnalog": "Tonos contiguos que producen transiciones suaves y naturales, perfectos para interfaces relajantes.",
+    "schemeTriad": "Triádico (120°):",
+    "descTriad": "Tres tonos equidistantes en el círculo cromático que aportan vibrancia equilibrada.",
+    "schemeMono": "Monocromático:",
+    "descMono": "Variaciones de luminosidad y saturación sobre un único tono base para un diseño minimalista.",
+    "faqTitle": "Preguntas Frecuentes (FAQ)",
+    "faq1Q": "Q: ¿Cómo funcionan las reglas geométricas de armonía?",
+    "faq1A": "A: Se calculan relaciones angulares sobre el círculo de 360° para asegurar equilibrio cromático sin fatiga ocular.",
+    "faq2Q": "Q: ¿En qué se diferencian HEX, RGB y HSL?",
+    "faq2A": "A: HEX es hexadecimal, RGB controla canales de luz (0-255) y HSL representa tono, saturación y brillo de forma intuitiva.",
+    "faq3Q": "Q: ¿Cuál es el requisito de contraste WCAG?",
+    "faq3A": "A: El estándar AA exige al menos 4.5:1 para texto regular y 3.0:1 para encabezados grandes.",
+    "faq4Q": "Q: ¿Puedo fijar un color de marca y generar el resto?",
+    "faq4A": "A: ¡Sí! Haz clic en el icono del candado para bloquear el color deseado mientras sigues explorando combinaciones.",
+    "reviewDate": "Revisión editorial: noviembre de 2026",
+    "reviewTeam": "Equipo de Diseño y Óptica DopaBrain"
   }
 }
