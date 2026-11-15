@@ -77,11 +77,24 @@ class ColorPaletteGenerator {
 
         // History
         document.getElementById('clear-history-btn').addEventListener('click', () => {
-            if (confirm(i18n.t('messages.confirmClear'))) {
-                this.history = [];
-                this.saveState();
-                this.updateHistoryDisplay();
+            const btn = document.getElementById('clear-history-btn');
+            if (!this.clearConfirmPending) {
+                this.clearConfirmPending = true;
+                this.showNotifyToast(this.tr('messages.confirmClear', 'Tap again to clear history'));
+                if (btn) btn.dataset.confirm = 'pending';
+                clearTimeout(this.clearConfirmTimer);
+                this.clearConfirmTimer = setTimeout(() => {
+                    this.clearConfirmPending = false;
+                    if (btn) delete btn.dataset.confirm;
+                }, 3500);
+                return;
             }
+            clearTimeout(this.clearConfirmTimer);
+            this.clearConfirmPending = false;
+            if (btn) delete btn.dataset.confirm;
+            this.history = [];
+            this.saveState();
+            this.updateHistoryDisplay();
         });
 
         // Language selector

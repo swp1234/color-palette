@@ -122,5 +122,11 @@
         "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
       }
     ]
+  },
+  "accessibility": {
+    "skipToMain": "Ana içeriğe geç"
+  },
+  "modal": {
+    "exportTitle": "Dışa Aktar"
   }
 }

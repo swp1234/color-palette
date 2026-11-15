@@ -122,5 +122,11 @@
         "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
       }
     ]
+  },
+  "accessibility": {
+    "skipToMain": "跳转到主要内容"
+  },
+  "modal": {
+    "exportTitle": "导出"
   }
 }
