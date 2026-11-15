@@ -56,8 +56,18 @@
     "backHome": "← DopaBrain 홈"
   },
   "share": {
-    "copied": "✅ 복사됨!",
-    "copyUrl": "📋 URL 복사"
+    "saveCard": "팔레트 카드 저장",
+    "savingCard": "카드 생성 중...",
+    "savedCard": "팔레트 카드가 저장되었습니다!",
+    "shareX": "X에 공유",
+    "copyUrl": "링크 복사",
+    "copied": "팔레트 링크가 복사되었습니다!",
+    "tweetText": "DopaBrain 색상 팔레트 생성기로 조화로운 UI 배색을 만들어 보세요.",
+    "cardBadge": "DOPABRAIN 컬러 스튜디오",
+    "cardTitle": "조화로운 컬러 팔레트",
+    "cardSubtitle": "색상환 기반 비율 및 HEX 스와치 카드",
+    "cardModeLabel": "배색 모드",
+    "cardCta": "dopabrain.com/color-palette에서 무료 제작"
   },
   "related": {
     "title": "더 많은 콘텐츠",
@@ -90,5 +100,27 @@
     "faq4A": "A: 네! 색상 카드의 자물쇠 아이콘을 클릭하면 해당 색상이 잠기며, 스페이스바나 생성 버튼을 눌러도 잠긴 색상을 기준으로 어울리는 새 색상이 조합됩니다.",
     "reviewDate": "편집 검토: 2026년 11월",
     "reviewTeam": "DopaBrain 디자인 시스템 & 광학 연구팀"
+  },
+  "curated": {
+    "title": "색채 이론 및 UI 디자인 추천 도서",
+    "subtitle": "색상의 상호작용과 시각적 위계를 깊이 이해하는 필수 명저",
+    "badge": "추천 도서",
+    "affiliateNote": "도서 링크에는 DopaBrain 무료 도구 운영을 지원하는 제휴 링크가 포함됩니다.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "색채의 상호작용 (Interaction of Color)",
+        "author": "Josef Albers",
+        "note": "인접한 색상이 인간의 시지각과 명도 대비에 미치는 영향을 다룬 고전 명저.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "디자인과 인간 심리 (The Design of Everyday Things)",
+        "author": "Don Norman",
+        "note": "직관적인 인터페이스와 시각적 계층 구조를 설계하는 UX 디자인 바이블.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

@@ -56,8 +56,18 @@
     "backHome": "← Accueil DopaBrain"
   },
   "share": {
-    "copied": "✅ Copié!",
-    "copyUrl": "📋 Copier l'URL"
+    "saveCard": "Enregistrer la palette",
+    "savingCard": "Création...",
+    "savedCard": "Carte palette enregistrée !",
+    "shareX": "Partager sur X",
+    "copyUrl": "Copier le lien",
+    "copied": "Lien copié !",
+    "tweetText": "Créer des harmonies de couleurs accessibles avec DopaBrain Color Palette Generator.",
+    "cardBadge": "DOPABRAIN STUDIO COULEUR",
+    "cardTitle": "Palette d’Harmonie Chromatique",
+    "cardSubtitle": "Équilibres chromatiques et codes HEX",
+    "cardModeLabel": "MODE D’HARMONIE",
+    "cardCta": "Gratuit sur dopabrain.com/color-palette"
   },
   "related": {
     "title": "À découvrir",
@@ -90,5 +100,27 @@
     "faq4A": "A: Oui, cliquez sur le cadenas pour figer une nuance pendant que vous renouvelez les autres teintes.",
     "reviewDate": "Validation éditoriale: novembre 2026",
     "reviewTeam": "Équipe Design & Optique DopaBrain"
+  },
+  "curated": {
+    "title": "Livres sur la théorie des couleurs",
+    "subtitle": "Références clés sur la perception chromatique et les systèmes de design",
+    "badge": "Livre",
+    "affiliateNote": "Contient des liens de recommandation soutenant les outils gratuits DopaBrain.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "L’Interaction des couleurs (Interaction of Color)",
+        "author": "Josef Albers",
+        "note": "Ouvrage fondateur sur la relativité et le contraste des teintes adjacentes.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "Le Design des objets du quotidien",
+        "author": "Don Norman",
+        "note": "Principes essentiels d’ergonomie visuelle et d’architecture d’interface.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

@@ -56,8 +56,18 @@
     "backHome": "← Inicio DopaBrain"
   },
   "share": {
-    "copied": "✅ ¡Copiado!",
-    "copyUrl": "📋 Copiar URL"
+    "saveCard": "Guardar Paleta",
+    "savingCard": "Creando...",
+    "savedCard": "¡Tarjeta de paleta guardada!",
+    "shareX": "Compartir en X",
+    "copyUrl": "Copiar enlace",
+    "copied": "¡Enlace copiado!",
+    "tweetText": "Creando paletas cromáticas equilibradas en DopaBrain Color Palette Generator.",
+    "cardBadge": "DOPABRAIN COLOR STUDIO",
+    "cardTitle": "Paleta de Armonía Cromática",
+    "cardSubtitle": "Ángulos cromáticos y muestras HEX",
+    "cardModeLabel": "MODO DE ARMONÍA",
+    "cardCta": "Gratis en dopabrain.com/color-palette"
   },
   "related": {
     "title": "Explora más",
@@ -90,5 +100,27 @@
     "faq4A": "A: ¡Sí! Haz clic en el icono del candado para bloquear el color deseado mientras sigues explorando combinaciones.",
     "reviewDate": "Revisión editorial: noviembre de 2026",
     "reviewTeam": "Equipo de Diseño y Óptica DopaBrain"
+  },
+  "curated": {
+    "title": "Libros de Teoría del Color y Diseño",
+    "subtitle": "Obras esenciales sobre interacción cromática y diseño visual accesible",
+    "badge": "Libro",
+    "affiliateNote": "Incluye enlaces de referencia que apoyan las herramientas gratuitas de DopaBrain.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "La interacción del color (Interaction of Color)",
+        "author": "Josef Albers",
+        "note": "El clásico fundamental sobre cómo los colores cambian al contrastar entre sí.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "El diseño de las cosas cotidianas",
+        "author": "Don Norman",
+        "note": "Principios clave sobre jerarquía visual y usabilidad en interfaces.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

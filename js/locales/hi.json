@@ -56,8 +56,18 @@
     "backHome": "← DopaBrain होम"
   },
   "share": {
-    "copied": "✅ कॉपी हो गया!",
-    "copyUrl": "📋 URL कॉपी करें"
+    "saveCard": "पैलेट कार्ड सहेजें",
+    "savingCard": "तैयार हो रहा है...",
+    "savedCard": "पैलेट कार्ड सहेजा गया!",
+    "shareX": "X पर साझा करें",
+    "copyUrl": "लिंक कॉपी करें",
+    "copied": "लिंक कॉपी हो गया!",
+    "tweetText": "DopaBrain कलर पैलेट जनरेटर के साथ संतुलित रंग संयोजन बना रहे हैं।",
+    "cardBadge": "DOPABRAIN कलर स्टूडियो",
+    "cardTitle": "रंग सामंजस्य पैलेट",
+    "cardSubtitle": "संतुलित वर्ण अनुपात और HEX स्वैच",
+    "cardModeLabel": "सामंजस्य मोड",
+    "cardCta": "मुफ़्त उपयोग: dopabrain.com/color-palette"
   },
   "related": {
     "title": "और खोजें",
@@ -90,5 +100,27 @@
     "faq4A": "A: हाँ! ताला आइकन पर क्लिक करके अपने रंग को लॉक करें और स्पेसबार दबाकर अन्य रंगों को मैच करें।",
     "reviewDate": "संपादकीय समीक्षा: नवंबर 2026",
     "reviewTeam": "डोपाब्रेन डिजाइन और प्रकाशिकी टीम"
+  },
+  "curated": {
+    "title": "रंग सिद्धांत और डिज़ाइन पुस्तकें",
+    "subtitle": "रंग अंतःक्रिया, दृश्य संतुलन और UI डिज़ाइन पर प्रमुख पुस्तकें",
+    "badge": "पुस्तक",
+    "affiliateNote": "इसमें पुस्तक संदर्भ लिंक हैं जो DopaBrain के मुफ़्त टूल्स का समर्थन करते हैं।",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "Interaction of Color",
+        "author": "Josef Albers",
+        "note": "आसपास के रंग आंखों की धारणा और कंट्रास्ट को कैसे बदलते हैं, इस पर क्लासिक कृति।",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "The Design of Everyday Things",
+        "author": "Don Norman",
+        "note": "स्पष्ट दृश्य पदानुक्रम और सहज उपयोगकर्ता इंटरफ़ेस के मूल सिद्धांत।",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

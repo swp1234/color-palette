@@ -56,8 +56,18 @@
     "backHome": "← DopaBrain 首页"
   },
   "share": {
-    "copied": "✅ 已复制！",
-    "copyUrl": "📋 复制链接"
+    "saveCard": "保存配色卡片",
+    "savingCard": "正在生成...",
+    "savedCard": "配色卡片已保存！",
+    "shareX": "分享到 X",
+    "copyUrl": "复制链接",
+    "copied": "链接已复制！",
+    "tweetText": "正在使用 DopaBrain 配色生成器打造高对比度的和谐色彩方案。",
+    "cardBadge": "DOPABRAIN 色彩工坊",
+    "cardTitle": "和谐色彩搭配卡",
+    "cardSubtitle": "色轮几何比例与十六进制色板",
+    "cardModeLabel": "色彩模式",
+    "cardCta": "前往 dopabrain.com/color-palette 免费生成"
   },
   "related": {
     "title": "探索更多",
@@ -90,5 +100,27 @@
     "faq4A": "A: 当然可以！点击色卡上的锁形图标即可锁定，生成新配色时将保留锁定颜色并自动匹配协调配色。",
     "reviewDate": "编辑审核：2026年11月",
     "reviewTeam": "DopaBrain设计系统与光学研究组"
+  },
+  "curated": {
+    "title": "色彩理论与界面设计推荐书单",
+    "subtitle": "深入探索色彩交互视觉规律与可用性设计的经典著作",
+    "badge": "精选图书",
+    "affiliateNote": "包含支持 DopaBrain 免费工具运营的推荐图书链接。",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "色彩的互动 (Interaction of Color)",
+        "author": "Josef Albers",
+        "note": "揭示相邻色彩如何影响人眼对比与视觉感知的现代色彩经典。",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "设计心理学 (The Design of Everyday Things)",
+        "author": "Don Norman",
+        "note": "理解界面可用性、视觉反馈与清晰信息层级的必读指南。",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

@@ -56,8 +56,18 @@
     "backHome": "← Beranda DopaBrain"
   },
   "share": {
-    "copied": "✅ Disalin!",
-    "copyUrl": "📋 Salin URL"
+    "saveCard": "Simpan Kartu Palet",
+    "savingCard": "Membuat...",
+    "savedCard": "Kartu palet tersimpan!",
+    "shareX": "Bagikan ke X",
+    "copyUrl": "Salin Tautan",
+    "copied": "Tautan disalin!",
+    "tweetText": "Merancang palet warna harmonis di DopaBrain Color Palette Generator.",
+    "cardBadge": "DOPABRAIN COLOR STUDIO",
+    "cardTitle": "Palet Harmoni Warna",
+    "cardSubtitle": "Rasio kromatik & swatch kode HEX",
+    "cardModeLabel": "MODE HARMONI",
+    "cardCta": "Gratis di dopabrain.com/color-palette"
   },
   "related": {
     "title": "Jelajahi lainnya",
@@ -90,5 +100,27 @@
     "faq4A": "A: Ya! Klik ikon gembok pada kartu warna untuk menguncinya saat menekan Spasi atau Buat Palet.",
     "reviewDate": "Tinjauan Editorial: November 2026",
     "reviewTeam": "Tim Sistem Desain & Optik DopaBrain"
+  },
+  "curated": {
+    "title": "Buku Teori Warna & Desain UI",
+    "subtitle": "Bacaan utama tentang interaksi warna, kontras visual, dan sistem desain",
+    "badge": "Buku",
+    "affiliateNote": "Memuat tautan referensi buku untuk mendukung alat gratis DopaBrain.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "Interaction of Color",
+        "author": "Josef Albers",
+        "note": "Karya klasik tentang bagaimana warna saling memengaruhi persepsi mata.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "The Design of Everyday Things",
+        "author": "Don Norman",
+        "note": "Prinsip dasar hierarki visual dan antarmuka yang mudah digunakan.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

@@ -56,8 +56,18 @@
     "backHome": "← DopaBrain Startseite"
   },
   "share": {
-    "copied": "✅ Kopiert!",
-    "copyUrl": "📋 URL kopieren"
+    "saveCard": "Farbkarte speichern",
+    "savingCard": "Wird erstellt...",
+    "savedCard": "Palettenkarte gespeichert!",
+    "shareX": "Auf X teilen",
+    "copyUrl": "Link kopieren",
+    "copied": "Link kopiert!",
+    "tweetText": "Harmonische Farbpaletten mit dem DopaBrain Color Palette Generator entwerfen.",
+    "cardBadge": "DOPABRAIN FARBSTUDIO",
+    "cardTitle": "Farbharmonie-Palette",
+    "cardSubtitle": "Ausgewogene Farbabstände & HEX-Codes",
+    "cardModeLabel": "HARMONIEMODUS",
+    "cardCta": "Kostenlos auf dopabrain.com/color-palette"
   },
   "related": {
     "title": "Mehr entdecken",
@@ -90,5 +100,27 @@
     "faq4A": "A: Ja. Ein Klick auf das Schloss-Symbol fixiert den Farbton, während neue Begleitfarben generiert werden.",
     "reviewDate": "Redaktionelle Prüfung: November 2026",
     "reviewTeam": "DopaBrain Design Systems & Optik-Team"
+  },
+  "curated": {
+    "title": "Bücher zu Farbtheorie & UI-Design",
+    "subtitle": "Grundlagenwerke über Farbwirkung, Kontraste und klares Interface-Design",
+    "badge": "Buchtipp",
+    "affiliateNote": "Enthält Buchempfehlungs-Links zur Unterstützung kostenloser DopaBrain-Tools.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "Interaction of Color (Grundlegung einer Didaktik des Sehens)",
+        "author": "Josef Albers",
+        "note": "Das Standardwerk über die gegenseitige Wahrnehmungsbeeinflussung von Farben.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "The Design of Everyday Things",
+        "author": "Don Norman",
+        "note": "Zeitlose Prinzipien für visuelle Hierarchie und intuitive Bedienung.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

@@ -56,14 +56,20 @@ class I18n {
     updateUI() {
         document.documentElement.lang = this.currentLang;
         document.querySelectorAll('[data-i18n]').forEach(el => {
-            el.textContent = this.t(el.getAttribute('data-i18n'));
+            const key = el.getAttribute('data-i18n');
+            const val = this.t(key);
+            if (val && val !== key) el.textContent = val;
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            el.placeholder = this.t(el.getAttribute('data-i18n-placeholder'));
+            const key = el.getAttribute('data-i18n-placeholder');
+            const val = this.t(key);
+            if (val && val !== key) el.placeholder = val;
         });
-        document.title = this.t('app.title');
+        const titleVal = this.t('app.title');
+        if (titleVal && titleVal !== 'app.title') document.title = titleVal;
         const meta = document.querySelector('meta[name="description"]');
-        if (meta) meta.content = this.t('app.description');
+        const descVal = this.t('app.description');
+        if (meta && descVal && descVal !== 'app.description') meta.content = descVal;
         document.querySelectorAll('.lang-option').forEach(btn => {
             btn.classList.toggle('active', btn.getAttribute('data-lang') === this.currentLang);
         });

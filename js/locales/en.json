@@ -56,8 +56,18 @@
     "backHome": "← DopaBrain Home"
   },
   "share": {
-    "copied": "✅ Copied!",
-    "copyUrl": "📋 Copy URL"
+    "saveCard": "Save Palette Card",
+    "savingCard": "Creating card...",
+    "savedCard": "Palette card saved!",
+    "shareX": "Share on X",
+    "copyUrl": "Copy Link",
+    "copied": "Palette link copied!",
+    "tweetText": "Crafting accessible color harmonies with DopaBrain Color Palette Generator.",
+    "cardBadge": "DOPABRAIN COLOR STUDIO",
+    "cardTitle": "Color Harmony Palette",
+    "cardSubtitle": "Balanced chromatic ratios & hex swatches",
+    "cardModeLabel": "HARMONY SCHEME",
+    "cardCta": "Generate free at dopabrain.com/color-palette"
   },
   "related": {
     "title": "More to Explore",
@@ -90,5 +100,27 @@
     "faq4A": "A: Yes! Tap the lock icon on any swatch. Locked swatches remain untouched when pressing Spacebar or 'Generate', allowing harmonious companion color discovery.",
     "reviewDate": "Editorial Review: November 2026",
     "reviewTeam": "DopaBrain Design Systems & Optics Team"
+  },
+  "curated": {
+    "title": "Color Theory & Design Books",
+    "subtitle": "Essential guides on color interaction, perception, and UI systems",
+    "badge": "Book Pick",
+    "affiliateNote": "Contains book referral links supporting DopaBrain free tools.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "Interaction of Color",
+        "author": "Josef Albers",
+        "note": "The classic masterwork on how adjacent hues shift perception and contrast.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "The Design of Everyday Things",
+        "author": "Don Norman",
+        "note": "Foundational principles on visual hierarchy, affordances, and usable interfaces.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

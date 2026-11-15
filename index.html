@@ -7,7 +7,7 @@
     <meta name="robots" content="max-image-preview:large">
     <meta name="theme-color" content="#667eea">
     <meta name="description" content="Generate harmonious color palettes instantly. Complementary, analogous, triadic modes with HEX/RGB/HSL conversion. Save and export palettes. Try free!">
-    <meta name="dateModified" content="2026-11-07">
+    <meta name="dateModified" content="2026-11-15">
     <meta name="keywords" content="색상 팔레트, 색상 생성기, 색상 조화, 색상 코드, HEX RGB HSL, 디자인 도구">
     <title data-i18n="app.title">Color Palette Generator - Free Harmony Creator | DopaBrain</title>
     <link rel="canonical" href="https://dopabrain.com/color-palette/">
@@ -291,16 +291,21 @@
 
     <!-- Social Share Buttons -->
     <div class="share-section" id="share-section">
-        <button class="share-btn share-twitter" id="shareTwitterBtn" aria-label="Share on Twitter">
-            <span>𝕏</span> Twitter
+        <button type="button" class="share-btn share-card" id="saveCardBtn" data-i18n="share.saveCard">Save Palette Card</button>
+        <button type="button" class="share-btn share-twitter" id="shareTwitterBtn" aria-label="Share on Twitter">
+            <span>𝕏</span> <span data-i18n="share.shareX">Share on X</span>
         </button>
-        <button class="share-btn share-url" id="shareUrlBtn" aria-label="Copy URL" data-i18n="share.copyUrl">
-            📋 Copy URL
+        <button type="button" class="share-btn share-url" id="shareUrlBtn" aria-label="Copy URL" data-i18n="share.copyUrl">
+            Copy Link
         </button>
     </div>
+    <canvas id="shareCanvas" width="1080" height="1920" style="display:none;"></canvas>
+
+    <!-- Curated Design & Color Theory Guides -->
+    <section id="curated-resources-card" class="curated-resources-card" aria-label="Color Theory & Design Books"></section>
 
     <!-- Toast Notification -->
-    <div class="toast" id="toast"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script src="js/i18n.js"></script>
     <script src="js/app.js"></script>
@@ -309,19 +314,16 @@
             navigator.serviceWorker.register('sw.js').catch(e => console.log('SW error:', e));
         }
     </script>
-    <!-- Social Share Buttons CSS & JS -->
+    <!-- Social Share Buttons CSS -->
     <style>
-        .share-section{display:flex;gap:8px;justify-content:center;margin:20px auto;flex-wrap:wrap;max-width:400px}
-        .share-btn{min-height:44px;padding:10px 20px;border:none;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:6px;font-family:inherit}
+        .share-section{display:flex;gap:8px;justify-content:center;margin:20px auto;flex-wrap:wrap;max-width:440px}
+        .share-btn{min-height:44px;min-width:44px;padding:10px 16px;border:none;border-radius:12px;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:6px;font-family:inherit;box-sizing:border-box}
         .share-btn:hover{transform:translateY(-1px)}
+        .share-card{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
         .share-twitter{background:#000;color:#fff}
-        .share-url{background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.15)}
+        .share-url{background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15)}
         [data-theme="light"] .share-url{background:rgba(0,0,0,.05);color:#333;border-color:rgba(0,0,0,.1)}
     </style>
-    <script>
-        document.getElementById('shareTwitterBtn')?.addEventListener('click',function(){var t=document.title+' '+window.location.href;window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(t),'_blank');if(typeof gtag!=='undefined')gtag('event','share',{method:'twitter'})});
-        document.getElementById('shareUrlBtn')?.addEventListener('click',function(){var b=this;navigator.clipboard.writeText(window.location.href).then(function(){b.textContent=window.i18n?.t('share.copied')||'✅ Copied!';setTimeout(function(){b.textContent=window.i18n?.t('share.copyUrl')||'📋 Copy URL'},2000)});if(typeof gtag!=='undefined')gtag('event','share',{method:'url_copy'})});
-    </script>
 
     <!-- Related Articles & Portal Link -->
     <nav style="max-width:480px;margin:24px auto 0;padding:0 16px" aria-label="Related articles">

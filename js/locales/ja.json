@@ -56,8 +56,18 @@
     "backHome": "← DopaBrain ホーム"
   },
   "share": {
-    "copied": "✅ コピーしました！",
-    "copyUrl": "📋 URLをコピー"
+    "saveCard": "パレット画像を保存",
+    "savingCard": "作成中...",
+    "savedCard": "パレットカードを保存しました！",
+    "shareX": "Xで共有",
+    "copyUrl": "リンクをコピー",
+    "copied": "リンクをコピーしました！",
+    "tweetText": "DopaBrain カラーパレット生成器で美しい配色スキームを作成中。",
+    "cardBadge": "DOPABRAIN カラースタジオ",
+    "cardTitle": "ハーモニー・カラーパレット",
+    "cardSubtitle": "色彩理論に基づく調和配色＆HEXコード",
+    "cardModeLabel": "配色モード",
+    "cardCta": "dopabrain.com/color-palette で無料作成"
   },
   "related": {
     "title": "もっと楽しむ",
@@ -90,5 +100,27 @@
     "faq4A": "A: はい。鍵アイコンをクリックすると色が固定され、スペースキーを押しても固定色に合わせて周囲の色のみが再生成されます。",
     "reviewDate": "編集レビュー: 2026年11月",
     "reviewTeam": "DopaBrainデザインシステム＆光学チーム"
+  },
+  "curated": {
+    "title": "色彩理論・UIデザイン推薦書籍",
+    "subtitle": "色の相互作用と視覚的コントラストを学ぶ定番の必読書",
+    "badge": "書籍案内",
+    "affiliateNote": "無料ツール運営を支える紹介リンクが含まれています。",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "色彩の相互作用 (Interaction of Color)",
+        "author": "Josef Albers",
+        "note": "隣り合う色が視覚とコントラストに与える変化を解き明かす名著。",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "誰のためのデザイン？ (The Design of Everyday Things)",
+        "author": "Don Norman",
+        "note": "使いやすい視覚階層と直感的なUI設計の原点となる必読書。",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

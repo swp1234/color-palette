@@ -21,8 +21,9 @@ class ColorPaletteGenerator {
         }
 
         this.loadState();
-        this.generatePalette();
+        this.generatePalette(false);
         this.setupEventListeners();
+        this.renderCuratedResources();
         initRelatedFunnels();
 
         const loader = document.getElementById('app-loader');
@@ -34,18 +35,22 @@ class ColorPaletteGenerator {
 
     setupEventListeners() {
         // Generate button and spacebar
-        document.getElementById('generate-btn').addEventListener('click', () => this.generatePalette());
+        document.getElementById('generate-btn').addEventListener('click', () => this.generatePalette(true));
         document.addEventListener('keydown', (e) => {
             if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
                 e.preventDefault();
-                this.generatePalette();
+                this.generatePalette(true);
             }
         });
+
+        document.getElementById('saveCardBtn')?.addEventListener('click', () => this.generateStoryCard());
+        document.getElementById('shareTwitterBtn')?.addEventListener('click', () => this.shareOnX());
+        document.getElementById('shareUrlBtn')?.addEventListener('click', () => this.copyShareUrl());
 
         // Mode selector
         document.getElementById('mode-select').addEventListener('change', (e) => {
             this.colorMode = e.target.value;
-            this.generatePalette();
+            this.generatePalette(true);
         });
 
         // Code format buttons
@@ -89,6 +94,7 @@ class ColorPaletteGenerator {
                 const lang = e.target.dataset.lang;
                 await i18n.setLanguage(lang);
                 this.updateLanguageDisplay();
+                this.renderCuratedResources();
                 initRelatedFunnels();
                 document.getElementById('lang-menu').classList.add('hidden');
                 this.saveState();
@@ -96,8 +102,13 @@ class ColorPaletteGenerator {
         });
     }
 
-    generatePalette() {
-        if(typeof gtag!=='undefined') gtag('event','generate_palette');
+    generatePalette(isUserAction = true) {
+        if (isUserAction && typeof gtag !== 'undefined') {
+            const lang = i18n.getCurrentLanguage() || 'ko';
+            gtag('event', 'test_start', { app_name: 'color-palette', mode: this.colorMode, lang });
+            gtag('event', 'test_complete', { app_name: 'color-palette', result_type: this.colorMode, lang });
+            gtag('event', 'generate_palette');
+        }
         // Generate base color
         const baseColor = this.randomColor();
         const palette = [baseColor];
@@ -519,6 +530,256 @@ class ColorPaletteGenerator {
             }
         }
     }
+
+    tr(key, fallback) {
+        const val = i18n.t(key);
+        return val && val !== key ? val : fallback;
+    }
+
+    showNotifyToast(message) {
+        const toast = document.getElementById('toast');
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add('active');
+        clearTimeout(this.__toastTimer);
+        this.__toastTimer = setTimeout(() => toast.classList.remove('active'), 2200);
+    }
+
+    getShareUrl() {
+        const lang = i18n.getCurrentLanguage() || 'en';
+        return `${window.location.origin}/color-palette/?lang=${encodeURIComponent(lang)}&utm_source=share`;
+    }
+
+    shareOnX() {
+        const shareUrl = this.getShareUrl();
+        const text = this.tr('share.tweetText', 'Crafting accessible color harmonies with DopaBrain Color Palette Generator.');
+        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`, '_blank', 'noopener,noreferrer');
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                method: 'twitter',
+                app_name: 'color-palette',
+                lang: i18n.getCurrentLanguage() || 'en'
+            });
+        }
+    }
+
+    async copyShareUrl() {
+        const shareUrl = this.getShareUrl();
+        const copied = this.tr('share.copied', 'Palette link copied!');
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            try { await navigator.clipboard.writeText(shareUrl); } catch (e) {}
+        } else {
+            const ta = document.createElement('textarea');
+            ta.value = shareUrl;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            ta.remove();
+        }
+        this.showNotifyToast(copied);
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                method: 'clipboard',
+                app_name: 'color-palette',
+                lang: i18n.getCurrentLanguage() || 'en'
+            });
+        }
+    }
+
+    generateStoryCard() {
+        const canvas = document.getElementById('shareCanvas');
+        const saveBtn = document.getElementById('saveCardBtn');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        const lang = i18n.getCurrentLanguage() || 'en';
+        if (saveBtn) {
+            saveBtn.disabled = true;
+            saveBtn.textContent = this.tr('share.savingCard', 'Creating card...');
+        }
+
+        const w = 1080;
+        const h = 1920;
+        canvas.width = w;
+        canvas.height = h;
+
+        const grad = ctx.createLinearGradient(0, 0, w, h);
+        grad.addColorStop(0, '#0f172a');
+        grad.addColorStop(0.5, '#1e1b4b');
+        grad.addColorStop(1, '#312e81');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, w, h);
+
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#c7d2fe';
+        ctx.font = 'bold 34px system-ui, -apple-system, sans-serif';
+        ctx.fillText(this.tr('share.cardBadge', 'DOPABRAIN COLOR STUDIO'), 540, 170);
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 64px system-ui, -apple-system, sans-serif';
+        ctx.fillText(this.tr('share.cardTitle', 'Color Harmony Palette'), 540, 270);
+
+        ctx.fillStyle = '#a5b4fc';
+        ctx.font = '34px system-ui, -apple-system, sans-serif';
+        ctx.fillText(this.tr('share.cardSubtitle', 'Balanced chromatic ratios & hex swatches'), 540, 330);
+
+        const swatches = (this.currentPalette && this.currentPalette.length >= 5)
+            ? this.currentPalette.slice(0, 5)
+            : ['#667eea', '#764ba2', '#f093fb', '#4facfe', '#43e97b'];
+
+        swatches.forEach((hex, idx) => {
+            const y = 440 + idx * 175;
+            ctx.fillStyle = hex;
+            ctx.beginPath();
+            ctx.roundRect(120, y, 840, 145, 24);
+            ctx.fill();
+
+            ctx.fillStyle = 'rgba(15, 23, 42, 0.72)';
+            ctx.beginPath();
+            ctx.roundRect(150, y + 40, 230, 65, 16);
+            ctx.fill();
+
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 32px monospace';
+            ctx.fillText(String(hex).toUpperCase(), 265, y + 83);
+        });
+
+        ctx.textAlign = 'left';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.roundRect(120, 1365, 840, 210, 28);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = '#a5b4fc';
+        ctx.font = 'bold 28px system-ui, -apple-system, sans-serif';
+        ctx.fillText(this.tr('share.cardModeLabel', 'HARMONY SCHEME'), 180, 1445);
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 48px system-ui, -apple-system, sans-serif';
+        const modeText = this.tr(`modes.${this.colorMode}`, this.colorMode);
+        ctx.fillText(modeText, 180, 1515);
+
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#e2e8f0';
+        ctx.font = 'bold 34px system-ui, -apple-system, sans-serif';
+        ctx.fillText(this.tr('share.cardCta', 'Generate free at dopabrain.com/color-palette'), 540, 1730);
+
+        ctx.fillStyle = '#94a3b8';
+        ctx.font = '26px system-ui, -apple-system, sans-serif';
+        ctx.fillText(`dopabrain.com/color-palette/?lang=${lang}`, 540, 1795);
+
+        try {
+            const dataUrl = canvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = 'dopabrain-color-palette.png';
+            link.href = dataUrl;
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        } catch (e) {}
+
+        this.showNotifyToast(this.tr('share.savedCard', 'Palette card saved!'));
+        if (typeof gtag === 'function') {
+            gtag('event', 'save_image', {
+                app_name: 'color-palette',
+                result_type: this.colorMode || 'complementary',
+                lang
+            });
+        }
+
+        if (saveBtn) {
+            setTimeout(() => {
+                saveBtn.disabled = false;
+                saveBtn.textContent = this.tr('share.saveCard', 'Save Palette Card');
+            }, 600);
+        }
+    }
+
+    renderCuratedResources() {
+        const container = document.getElementById('curated-resources-card');
+        if (!container) return;
+        const curated = i18n.t('curated');
+        if (!curated || typeof curated !== 'object' || !Array.isArray(curated.books)) return;
+
+        const lang = i18n.getCurrentLanguage() || 'en';
+        container.textContent = '';
+
+        const header = document.createElement('div');
+        header.className = 'curated-resources-header';
+        const titleEl = document.createElement('h3');
+        titleEl.className = 'curated-resources-title';
+        titleEl.textContent = curated.title || '';
+        const subEl = document.createElement('p');
+        subEl.className = 'curated-resources-subtitle';
+        subEl.textContent = curated.subtitle || '';
+        header.appendChild(titleEl);
+        header.appendChild(subEl);
+
+        const list = document.createElement('div');
+        list.className = 'curated-resources-list';
+
+        curated.books.forEach((book) => {
+            const link = document.createElement('a');
+            link.className = 'curated-book-link';
+            link.href = book.url;
+            link.target = '_blank';
+            link.rel = 'sponsored noopener noreferrer';
+
+            const meta = document.createElement('div');
+            meta.className = 'curated-book-meta';
+
+            const bTitle = document.createElement('span');
+            bTitle.className = 'curated-book-title';
+            bTitle.textContent = book.title || '';
+
+            const bAuthor = document.createElement('span');
+            bAuthor.className = 'curated-book-author';
+            bAuthor.textContent = book.author || '';
+
+            const bNote = document.createElement('span');
+            bNote.className = 'curated-book-note';
+            bNote.textContent = book.note || '';
+
+            meta.appendChild(bTitle);
+            meta.appendChild(bAuthor);
+            meta.appendChild(bNote);
+
+            const badge = document.createElement('span');
+            badge.className = 'curated-book-badge';
+            badge.textContent = curated.badge || 'Book';
+
+            link.appendChild(meta);
+            link.appendChild(badge);
+
+            link.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'curated_resource_click', {
+                        app_name: 'color-palette',
+                        resource_type: 'book',
+                        item_id: book.id || 'book',
+                        lang
+                    });
+                }
+            });
+
+            list.appendChild(link);
+        });
+
+        const noteEl = document.createElement('p');
+        noteEl.className = 'curated-affiliate-note';
+        noteEl.textContent = curated.affiliateNote || '';
+
+        container.appendChild(header);
+        container.appendChild(list);
+        container.appendChild(noteEl);
+    }
 }
 
 // Initialize app
@@ -540,46 +801,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     app = new ColorPaletteGenerator();
-    preserveLanguageLinks();
+    initRelatedFunnels();
 });
 
 function preserveLanguageLinks() {
-    try {
-        const lang = (window.i18n && window.i18n.currentLang) || new URLSearchParams(window.location.search).get('lang') || 'ko';
-        document.querySelectorAll('.related-card, a[href^="/color-blindness/"], a[href^="/future-self/"], a[href^="/stress-check/"], a[href^="/unit-converter/"]').forEach(function(a) {
-            const href = a.getAttribute('href');
-            if (!href || href.startsWith('/portal/')) return;
-            const url = new URL(href, window.location.origin);
-            if (lang) {
-                url.searchParams.set('lang', lang);
-            }
-            url.searchParams.set('source', 'color_palette_result');
-            a.setAttribute('href', url.pathname + url.search + url.hash);
-
-            if (!a.__ctaBound) {
-                a.__ctaBound = true;
-                a.addEventListener('click', function() {
-                    if (typeof gtag === 'function') {
-                        gtag('event', 'content_cta_click', {
-                            cta_surface: 'related_tools',
-                            destination: a.getAttribute('href'),
-                            source: 'color_palette_result',
-                            lang: lang || 'ko'
-                        });
-                    }
-                });
-            }
-        });
-    } catch (e) {}
+    initRelatedFunnels();
 }
-
 
 // Funnel bridge & language preservation
 function initRelatedFunnels() {
     const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get('lang') || (window.i18n ? window.i18n.currentLang : 'ko') || 'ko';
+    const lang = (window.i18n && typeof window.i18n.getCurrentLanguage === 'function' ? window.i18n.getCurrentLanguage() : null) || urlParams.get('lang') || 'ko';
     const base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
-    document.querySelectorAll('.related-grid a').forEach(link => {
+    document.querySelectorAll('.related-grid a, .related-card').forEach(link => {
         const baseHref = link.getAttribute('data-base-href') || link.getAttribute('href');
         if (!baseHref || baseHref.startsWith('http') || baseHref.startsWith('#')) return;
         try {
@@ -591,12 +825,13 @@ function initRelatedFunnels() {
         if (!link.dataset.trackedCta) {
             link.dataset.trackedCta = 'true';
             link.addEventListener('click', () => {
+                const liveLang = (window.i18n && typeof window.i18n.getCurrentLanguage === 'function' ? window.i18n.getCurrentLanguage() : null) || new URLSearchParams(window.location.search).get('lang') || 'ko';
                 if (typeof gtag === 'function') {
                     gtag('event', 'content_cta_click', {
                         cta_surface: 'color_palette_related',
                         destination: link.getAttribute('href'),
                         source: 'color_palette',
-                        lang: lang
+                        lang: liveLang
                     });
                 }
             });

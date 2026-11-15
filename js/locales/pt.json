@@ -56,8 +56,18 @@
     "backHome": "← Início DopaBrain"
   },
   "share": {
-    "copied": "✅ Copiado!",
-    "copyUrl": "📋 Copiar URL"
+    "saveCard": "Salvar Paleta",
+    "savingCard": "Gerando...",
+    "savedCard": "Cartão de paleta salvo!",
+    "shareX": "Compartilhar no X",
+    "copyUrl": "Copiar Link",
+    "copied": "Link copiado!",
+    "tweetText": "Criando paletas harmônicas com alto contraste no Gerador de Cores DopaBrain.",
+    "cardBadge": "DOPABRAIN COLOR STUDIO",
+    "cardTitle": "Paleta de Harmonia Cromática",
+    "cardSubtitle": "Relações cromáticas e códigos HEX",
+    "cardModeLabel": "MODO DE HARMONIA",
+    "cardCta": "Grátis em dopabrain.com/color-palette"
   },
   "related": {
     "title": "Explore mais",
@@ -90,5 +100,27 @@
     "faq4A": "A: Sim! Basta clicar no ícone de cadeado para travar a cor desejada durante novas gerações.",
     "reviewDate": "Revisão editorial: novembro de 2026",
     "reviewTeam": "Equipe de Design e Óptica DopaBrain"
+  },
+  "curated": {
+    "title": "Livros sobre Teoria das Cores e Design",
+    "subtitle": "Referências essenciais sobre percepção cromática e sistemas de interface",
+    "badge": "Livro",
+    "affiliateNote": "Contém links de indicação que apoiam as ferramentas gratuitas da DopaBrain.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "A Interação da Cor (Interaction of Color)",
+        "author": "Josef Albers",
+        "note": "Clássico indispensável sobre contraste e percepção relativa entre matizes.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "O Design do Dia a Dia",
+        "author": "Don Norman",
+        "note": "Fundamentos de clareza visual, hierarquia e usabilidade de produtos.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }

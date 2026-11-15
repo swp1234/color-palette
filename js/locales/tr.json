@@ -56,8 +56,18 @@
     "backHome": "← DopaBrain Ana Sayfa"
   },
   "share": {
-    "copied": "✅ Kopyalandı!",
-    "copyUrl": "📋 URL'yi Kopyala"
+    "saveCard": "Palet Kartını Kaydet",
+    "savingCard": "Oluşturuluyor...",
+    "savedCard": "Palet kartı kaydedildi!",
+    "shareX": "X'te Paylaş",
+    "copyUrl": "Bağlantıyı Kopyala",
+    "copied": "Bağlantı kopyalandı!",
+    "tweetText": "DopaBrain Renk Paleti Oluşturucu ile uyumlu ve erişilebilir paletler tasarlıyorum.",
+    "cardBadge": "DOPABRAIN RENK STÜDYOSU",
+    "cardTitle": "Renk Uyumu Paleti",
+    "cardSubtitle": "Kromatik oranlar ve HEX renk kartelası",
+    "cardModeLabel": "UYUM MODU",
+    "cardCta": "Ücretsiz: dopabrain.com/color-palette"
   },
   "related": {
     "title": "Daha fazla keşfet",
@@ -90,5 +100,27 @@
     "faq4A": "A: Evet! Kilit simgesine tıklayarak rengi sabitleyebilir ve diğer renkleri bu renge uyumlu şekilde yenileyebilirsiniz.",
     "reviewDate": "Editör İncelemesi: Kasım 2026",
     "reviewTeam": "DopaBrain Tasarım Sistemleri & Optik Ekibi"
+  },
+  "curated": {
+    "title": "Renk Kuramı ve Tasarım Kitapları",
+    "subtitle": "Renk etkileşimi, algı ve arayüz sistemleri üzerine temel kaynaklar",
+    "badge": "Kitap",
+    "affiliateNote": "DopaBrain ücretsiz araçlarını destekleyen kitap yönlendirme bağlantıları içerir.",
+    "books": [
+      {
+        "id": "interaction-of-color",
+        "title": "Renklerin Etkileşimi (Interaction of Color)",
+        "author": "Josef Albers",
+        "note": "Yan yana gelen renklerin algı ve kontrast üzerindeki etkisini inceleyen klasik.",
+        "url": "https://www.amazon.com/dp/0300179359?tag=dopabrain-20"
+      },
+      {
+        "id": "design-of-everyday-things",
+        "title": "Gündelik Şeylerin Tasarımı",
+        "author": "Don Norman",
+        "note": "Görsel hiyerarşi ve kullanılabilir arayüz tasarımının temel ilkeleri.",
+        "url": "https://www.amazon.com/dp/0465050654?tag=dopabrain-20"
+      }
+    ]
   }
 }
