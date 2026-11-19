@@ -305,7 +305,19 @@
     <canvas id="shareCanvas" width="1080" height="1920" style="display:none;"></canvas>
 
     <!-- Curated Design & Color Theory Guides -->
-    <section id="curated-resources-card" class="curated-resources-card" aria-label="Color Theory & Design Books"></section>
+            <section class="next-step-card" id="nextStepCard" aria-label="HSP Sensitivity Test">
+            <p class="next-step-label" data-i18n="nextStep.label">Recommended Next Step</p>
+            <div class="next-step-main">
+                <span class="next-step-emoji" aria-hidden="true">🌿</span>
+                <div class="next-step-content">
+                    <h4 class="next-step-title" data-i18n="nextStep.title">HSP Sensitivity Test</h4>
+                    <p class="next-step-desc" data-i18n="nextStep.desc">Discover how visual, sensory, and emotional depth shape your intuition and focus in 3 minutes.</p>
+                </div>
+            </div>
+            <a href="/hsp-test/?lang=en&amp;start=1&amp;source=color_palette_result" class="next-step-cta" id="nextStepCta" data-i18n="nextStep.cta">Take HSP Test →</a>
+        </section>
+
+<section id="curated-resources-card" class="curated-resources-card" aria-label="Color Theory & Design Books"></section>
 
     <!-- Toast Notification -->
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -392,5 +404,35 @@
       </div>
     </div>
     <script src="/portal/js/cross-promo.js" defer></script>
+
+    <script>
+      (function () {
+        var cta = document.getElementById('nextStepCta');
+        if (!cta) return;
+        function syncHref() {
+          var lang = (window.i18n && (window.i18n.currentLang || (typeof window.i18n.getCurrentLanguage === 'function' && window.i18n.getCurrentLanguage())))
+            || new URLSearchParams(window.location.search).get('lang')
+            || document.documentElement.lang
+            || 'en';
+          try {
+            var u = new URL(cta.getAttribute('href'), window.location.origin);
+            u.searchParams.set('lang', lang);
+            u.searchParams.set('source', 'color_palette_result');
+            cta.setAttribute('href', u.pathname + u.search);
+          } catch (e) {}
+        }
+        syncHref();
+        cta.addEventListener('click', function () {
+          syncHref();
+          if (typeof gtag === 'function') {
+            gtag('event', 'content_cta_click', {
+              cta_surface: 'next_step_hero',
+              destination: cta.getAttribute('href'),
+              source: 'color_palette_result'
+            });
+          }
+        });
+      })();
+    </script>
 </body>
 </html>

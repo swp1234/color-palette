@@ -128,5 +128,11 @@
   },
   "modal": {
     "exportTitle": "Exportar"
+  },
+  "nextStep": {
+    "label": "Próximo passo recomendado",
+    "title": "Teste de Alta Sensibilidade HSP",
+    "desc": "Descubra em 3 minutos como sua sensibilidade visual e sensorial molda sua energia.",
+    "cta": "Fazer Teste HSP →"
   }
 }

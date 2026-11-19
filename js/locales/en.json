@@ -128,5 +128,11 @@
   },
   "modal": {
     "exportTitle": "Export"
+  },
+  "nextStep": {
+    "label": "Recommended Next Step",
+    "title": "HSP Sensitivity Test",
+    "desc": "Discover how visual, sensory, and emotional depth shape your intuition and focus in 3 minutes.",
+    "cta": "Take HSP Test →"
   }
 }

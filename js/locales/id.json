@@ -128,5 +128,11 @@
   },
   "modal": {
     "exportTitle": "Ekspor"
+  },
+  "nextStep": {
+    "label": "Langkah Berikutnya",
+    "title": "Tes Sensitivitas HSP",
+    "desc": "Kenali bagaimana kepekaan visual dan sensorikmu memengaruhi energimu dalam 3 menit.",
+    "cta": "Mulai Tes HSP →"
   }
 }

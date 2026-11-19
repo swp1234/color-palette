@@ -128,5 +128,11 @@
   },
   "modal": {
     "exportTitle": "Exportieren"
+  },
+  "nextStep": {
+    "label": "Empfohlener nächster Schritt",
+    "title": "HSP-Sensibilitätstest",
+    "desc": "Entdecke in 3 Minuten, wie visuelle und sensorische Tiefe deine Energie prägen.",
+    "cta": "HSP-Test starten →"
   }
 }
